@@ -21,6 +21,7 @@ public class BombGame : MonoBehaviour
     public Text timeText;
     public Text winnerText;
     public Text loserText;
+    public DetectUnit detectUnit;
     public float time;
     int winnerIndex = -1;
     int currentIndex = 0;
@@ -29,6 +30,7 @@ public class BombGame : MonoBehaviour
     void Start()
     {
         bomb = FindObjectOfType<Bomb>();
+        detectUnit = FindObjectOfType<DetectUnit>();
         playerList = FindObjectsOfType<Player>();
         InitGame();
     }
@@ -38,6 +40,7 @@ public class BombGame : MonoBehaviour
         time -= Time.deltaTime;
         timeText.text = time.ToString();   
     }
+
 
     async void BombPass()
     {
