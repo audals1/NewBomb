@@ -18,12 +18,13 @@ public class Player : MonoBehaviour
 {
     public float moveSpeed = 5f;
     float minX, maxX, minZ, maxZ;
-    bool hasBomb = false;
+    public bool hasBomb = false;
     float interval = 1.5f;
     float time;
     Vector3 randomDirection;
     public GameObject map;
     public Renderer mapRender;
+    
 
 
     void Start()
@@ -59,10 +60,10 @@ public class Player : MonoBehaviour
         mapRender = map.GetComponent<Renderer>();
         Vector3 planeSize = mapRender.bounds.size;
 
-        minX = map.transform.position.x - planeSize.x / 2;
-        maxX = map.transform.position.x + planeSize.x / 2;
-        minZ = map.transform.position.z - planeSize.z / 2;
-        maxZ = map.transform.position.z + planeSize.z / 2;
+        minX = map.transform.position.x - planeSize.x * 0.5f;
+        maxX = map.transform.position.x + planeSize.x * 0.5f;
+        minZ = map.transform.position.z - planeSize.z * 0.5f;
+        maxZ = map.transform.position.z + planeSize.z * 0.5f;
     }
 
     Vector3 GetRandomDirection()

@@ -21,46 +21,51 @@ public class BombGame : MonoBehaviour
     public Text timeText;
     public Text winnerText;
     public Text loserText;
-    public DetectUnit detectUnit;
-    public float time;
-    int winnerIndex = -1;
-    int currentIndex = 0;
+    public DetectUnit[] detectUnits;
+    float time = 0.0f;
     float timeLimit = 5.0f;
+    public int winnerIndex = -1;
+    public int currentIndex = 0;
+    
 
     void Start()
     {
         bomb = FindObjectOfType<Bomb>();
-        detectUnit = FindObjectOfType<DetectUnit>();
+        detectUnits = FindObjectsOfType<DetectUnit>();
         playerList = FindObjectsOfType<Player>();
         InitGame();
     }
 
     void Update()
     {
-        time -= Time.deltaTime;
-        timeText.text = time.ToString();   
+        Timer();
+        BombPass();
     }
 
 
-    async void BombPass()
+    /*async void BombPass()
     {
-        int randomDelay = Random.Range(0, 4000);
+        int randomDelay = Random.Range(0, 300);
         Debug.Log("대기중");
         await Task.Delay(randomDelay);
         Debug.Log("대기끝");
-        var randomIndex = -1;
         currentIndex = GetBombHolderIndex();
         winnerIndex = currentIndex;
-        do
-        {randomIndex = Random.Range(0, playerList.Length);
-        } while (currentIndex == randomIndex);
-        currentIndex = randomIndex;
-        playerList[winnerIndex].SetBomb(false);
-        playerList[currentIndex].SetBomb(true);
-        var setTransform = playerList[currentIndex].transform.GetChild(0);
-        bomb.transform.position = setTransform.position;
+        
         Debug.Log($"승리예정{winnerIndex}");
         Debug.Log($"폭사예정{currentIndex}");
+    }*/
+    void Timer()
+    {
+        time -= Time.deltaTime;
+        timeText.text = time.ToString();
+        if (time <= 0.0f) time = timeLimit;
+    }
+    void BombPass()
+    {
+        currentIndex = GetBombHolderIndex();
+        SetBombPos(currentIndex);
+        Debug.Log(currentIndex);
     }
 
     int GetBombHolderIndex()
@@ -82,7 +87,15 @@ public class BombGame : MonoBehaviour
             playerList[i].SetBomb(false);
         }
         time = timeLimit;
-        bomb.transform.position = playerList[0].transform.GetChild(0).position;
-        playerList[0].SetBomb(true);
+        int randomIndex = Random.Range(0, playerList.Length);
+        Debug.Log($"random index : {randomIndex}");
+        SetBombPos(randomIndex);
+        playerList[randomIndex].SetBomb(true);
+    }
+
+    void SetBombPos(int index)
+    {
+        bomb.transform.position = playerList[index].transform.GetChild(0).position;
+        bomb.transform.SetParent(playerList[index].transform);
     }
 }

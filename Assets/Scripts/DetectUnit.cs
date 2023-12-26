@@ -5,39 +5,70 @@ using UnityEngine;
 public class DetectUnit : MonoBehaviour
 {
     List<Player> unitList = new List<Player>();
-    public List<Player> UnitList { get { return unitList; } }
+    BombGame bombGame;
+
+    void Start()
+    {
+        bombGame = FindAnyObjectByType<BombGame>();    
+    }
 
 
-    public Player GetMonsterNearest(Vector3 myPos) //가장 가까운 다른 캐릭터를 리스트에서 찾음
+    public Player GetNearestPlayer()
     {
         if (unitList.Count == 0) return null;
 
-        float maxDist = (myPos - unitList[0].transform.position).sqrMagnitude;
-        int index = 0;
-        for (int i = 1; i < unitList.Count; i++)
+        Player nearestPlayer = unitList[0];
+        float minDistance = Vector3.SqrMagnitude(transform.position - nearestPlayer.transform.position);
+
+        foreach (Player player in unitList)
         {
-            var dist = (myPos - unitList[i].transform.position).sqrMagnitude;
-            if (maxDist < dist)
+            float distance = Vector3.SqrMagnitude(transform.position - player.transform.position);
+            if (distance < minDistance)
             {
-                maxDist = dist;
-                index = i;
+                minDistance = distance;
+                nearestPlayer = player;
             }
         }
-        return unitList[index];
+
+        return nearestPlayer;
     }
 
-    
+     void OnTriggerEnter(Collider other)
+    {
+        Player otherPlayer = other.GetComponent<Player>();
+        Player currentPlayer = transform.parent.GetComponent<Player>();
+        if (otherPlayer != null && !unitList.Contains(otherPlayer) && currentPlayer.HasBomb())
+        {
+            unitList.Add(otherPlayer);
+            Debug.Log($"{other.name} 에게 폭탄 전달");
+            otherPlayer.SetBomb(true);
+            currentPlayer.SetBomb(false);
+            
+            
 
-    void OnTriggerEnter(Collider other)
-    {
-        //Player contactUnit = other.attachedRigidbody.GetComponent<Player>();
-        unitList.Add(other.gameObject.GetComponent<Player>());
-        Debug.Log(unitList.Count);
-        
+
+            // 충돌 시 가장 가까운 플레이어를 다시 계산
+            Player nearestPlayer = GetNearestPlayer();
+            if (nearestPlayer != null)
+            {
+                Debug.Log($"가장 가까운 플레이어: {nearestPlayer.name}");
+            }
+        }
     }
-    void OnTriggerExit(Collider other)
+
+     void OnTriggerExit(Collider other)
     {
-        unitList.Remove(other.gameObject.GetComponent<Player>());
-        Debug.Log(unitList.Count);
+        Player player = other.GetComponent<Player>();
+        if (player != null && unitList.Contains(player))
+        {
+            unitList.Remove(player);
+
+            // 플레이어가 나가면서 가장 가까운 플레이어를 다시 계산
+            Player nearestPlayer = GetNearestPlayer();
+            if (nearestPlayer != null)
+            {
+                Debug.Log($"가장 가까운 플레이어: {nearestPlayer.name}");
+            }
+        }
     }
 }
