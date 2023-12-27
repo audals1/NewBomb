@@ -43,9 +43,11 @@ public class DetectUnit : MonoBehaviour
             Debug.Log($"{other.name} 에게 폭탄 전달");
             otherPlayer.SetBomb(true);
             currentPlayer.SetBomb(false);
-            
-            
 
+            //폭탄 가진 플레이어 이동 속도 업
+
+            otherPlayer.moveSpeed *= 1.5f;
+            currentPlayer.moveSpeed = 5f;
 
             // 충돌 시 가장 가까운 플레이어를 다시 계산
             Player nearestPlayer = GetNearestPlayer();

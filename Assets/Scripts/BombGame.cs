@@ -24,15 +24,16 @@ public class BombGame : MonoBehaviour
     public DetectUnit[] detectUnits;
     float time = 0.0f;
     float timeLimit = 5.0f;
+    float normalSpeed = 5.0f;
     public int winnerIndex = -1;
     public int currentIndex = 0;
     
 
     void Start()
     {
+        playerList = FindObjectsOfType<Player>();
         bomb = FindObjectOfType<Bomb>();
         detectUnits = FindObjectsOfType<DetectUnit>();
-        playerList = FindObjectsOfType<Player>();
         InitGame();
     }
 
@@ -40,6 +41,7 @@ public class BombGame : MonoBehaviour
     {
         Timer();
         BombPass();
+        
     }
 
 
@@ -68,7 +70,7 @@ public class BombGame : MonoBehaviour
         Debug.Log(currentIndex);
     }
 
-    int GetBombHolderIndex()
+    public int GetBombHolderIndex()
     {
         for (int i = 0; i < playerList.Length; i++)
         {
