@@ -9,7 +9,7 @@ public class DetectUnit : MonoBehaviour
 
     void Start()
     {
-        bombGame = FindAnyObjectByType<BombGame>();    
+        bombGame = FindObjectOfType<BombGame>();    
     }
 
 
