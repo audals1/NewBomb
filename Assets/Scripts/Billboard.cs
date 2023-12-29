@@ -24,11 +24,13 @@ public class Billboard : MonoBehaviour
             return;
 
         // 빌보드 설정
-        Vector3 targetPosition = new Vector3(mainCamera.transform.position.x, transform.position.y, mainCamera.transform.position.z);
+        var clampY = Mathf.Clamp(mainCamera.transform.position.y, 1.0f, 20.0f);
+        Vector3 targetPosition = new Vector3(mainCamera.transform.position.x, clampY, mainCamera.transform.position.z);
         //transform.position = targetPosition;
         transform.LookAt(targetPosition);
         mainCamera.transform.LookAt(transform.position);
-        Mathf.Clamp(mainCamera.transform.position.y, 1.0f, 20.0f);
+        mainCamera.transform.position = targetPosition;
+        Debug.Log(mainCamera.transform.position.y);
         //메인카메라의 x y z를 Clamp로 이동제한을 걸자
     }
 }
