@@ -22,15 +22,23 @@ public class Player : MonoBehaviour
     float interval = 1.5f;
     float time;
     Vector3 randomDirection;
+    Vector3 againstDirection;
     public GameObject map;
     public Renderer mapRender;
-    
+    public BombGame bombGame;
 
+
+    private void Awake()
+    {
+        bombGame = FindObjectOfType<BombGame>();
+    }
 
     void Start()
     {
         MapSetting();
         randomDirection = GetRandomDirection();
+        againstDirection = GetAgainstBombDirection();
+        
     }
 
     void Update()
@@ -39,9 +47,14 @@ public class Player : MonoBehaviour
         if (time > interval)
         {
             randomDirection = GetRandomDirection();
+            againstDirection = GetAgainstBombDirection();
             time = 0f;
         }
-        MoveRandomly();    
+        if (hasBomb)
+        {
+            MoveRandomly();
+        }
+        else MoveAgainstBomb();
     }
 
     public bool HasBomb()
@@ -71,6 +84,12 @@ public class Player : MonoBehaviour
         return new Vector3(Random.Range(-1f, 1f), 0, Random.Range(-1f, 1f)).normalized;
     }
 
+    Vector3 GetAgainstBombDirection()
+    {
+        againstDirection = bombGame.playerList[bombGame.GetBombHolderIndex()].transform.position - transform.position;
+        return -againstDirection;
+    }
+
     void MoveRandomly()
     {
         Vector3 newPosition = transform.position + randomDirection * moveSpeed * Time.deltaTime;
@@ -80,5 +99,15 @@ public class Player : MonoBehaviour
         newPosition.z = Mathf.Clamp(newPosition.z, minZ, maxZ);
 
         transform.position = newPosition;
+    }
+
+    void MoveAgainstBomb()
+    {
+        Vector3 position = transform.position + againstDirection * moveSpeed * Time.deltaTime;
+
+        position.x = Mathf.Clamp(position.x, minX, maxX);
+        position.z = Mathf.Clamp(position.z, minZ, maxZ);
+
+        transform.position = position;
     }
 }

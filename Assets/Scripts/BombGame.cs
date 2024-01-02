@@ -27,14 +27,19 @@ public class BombGame : MonoBehaviour
     float normalSpeed = 5.0f;
     public int winnerIndex = -1;
     public int currentIndex = 0;
-    
 
-    void Start()
+
+    void Awake()
     {
         playerList = FindObjectsOfType<Player>();
         bomb = FindObjectOfType<Bomb>();
         detectUnits = FindObjectsOfType<DetectUnit>();
         InitGame();
+    }
+
+    void Start()
+    {
+        
     }
 
     void Update()

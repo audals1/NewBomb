@@ -5,14 +5,7 @@ using UnityEngine;
 public class DetectUnit : MonoBehaviour
 {
     List<Player> unitList = new List<Player>();
-    BombGame bombGame;
-
-    void Start()
-    {
-        bombGame = FindObjectOfType<BombGame>();    
-    }
-
-
+    
     public Player GetNearestPlayer()
     {
         if (unitList.Count == 0) return null;
