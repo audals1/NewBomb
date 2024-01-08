@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class LambController : MonoBehaviour
 {
+    Animator animator;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    IEnumerator Coroutine_Blink()
+    {
+
+        yield return null;
     }
 }
