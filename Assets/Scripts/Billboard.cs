@@ -6,31 +6,24 @@ public class Billboard : MonoBehaviour
 {
     Camera mainCamera;
     public float offsetX, offsetY, offsetZ;
-    void Start()
+    public float smoothFactor = 5f;
+    void Awake()
     {
-        // 메인 카메라 참조
         mainCamera = Camera.main;
 
         if (mainCamera == null)
         {
-            Debug.LogError("메인 카메라를 찾을 수 없습니다. 스크립트를 적용한 오브젝트에 메인 카메라를 추가하세요.");
+            Debug.LogError("메인 카메라를 찾을 수 없습니다.");
         }
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        // 메인 카메라가 없다면 업데이트를 중단
-        if (mainCamera == null)
-            return;
-
-        // 빌보드 설정
         var clampY = Mathf.Clamp(mainCamera.transform.position.y, 1.0f, 20.0f);
-        Vector3 targetPosition = new Vector3(mainCamera.transform.position.x, clampY, mainCamera.transform.position.z);
-        //transform.position = targetPosition;
-        transform.LookAt(targetPosition);
+        var clampX = Mathf.Clamp(mainCamera.transform.position.x, -15.0f, 15.0f);
+        Vector3 targetPosition = new Vector3(clampX + offsetX, clampY + offsetY, mainCamera.transform.position.z + offsetZ);
+        //transform.LookAt(targetPosition);
         mainCamera.transform.LookAt(transform.position);
         mainCamera.transform.position = targetPosition;
-        Debug.Log(mainCamera.transform.position.y);
-        //메인카메라의 x y z를 Clamp로 이동제한을 걸자
     }
 }
