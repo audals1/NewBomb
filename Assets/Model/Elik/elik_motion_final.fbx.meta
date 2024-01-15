@@ -1,0 +1,1208 @@
+fileFormatVersion: 2
+guid: f862d74dd76778640b118e887603d555
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'elik1_Base_Pelvis' is inbetween humanoid
+      transforms and has rotation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      internalID: 1827226128182048838
+      firstFrame: 0
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: elik1_Base_Hip
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_L_Thigh
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_R_Thigh
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_L_Calf
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_R_Calf
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_L_Foot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_R_Foot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_Waist
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_Spine01
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_NeckTwist01
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_L_Clavicle
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_R_Clavicle
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_L_Upperarm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_R_Upperarm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_L_Forearm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_R_Forearm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_L_Hand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_R_Hand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_L_ToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_R_ToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_L_Eye
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_L_Thumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_L_Thumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_L_Thumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_L_Index1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_L_Mid1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_L_Mid2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_L_Mid3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_L_Ring1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_L_Ring2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_L_Ring3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_L_Pinky1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_L_Pinky2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_L_Pinky3
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_R_Thumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_R_Thumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_R_Thumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_R_Index1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_R_Index2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_R_Index3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_R_Mid1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_R_Mid2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_R_Mid3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_R_Ring1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_R_Ring2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_R_Ring3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_R_Pinky1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_R_Pinky2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_R_Pinky3
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_Spine02
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_R_Eye
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_L_Index2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elik1_Base_L_Index3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: elik_motion_final(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: elik1_gr
+      parentName: elik_motion_final(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: elik1Belt_low
+      parentName: elik1_gr
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: elik1Body_low
+      parentName: elik1_gr
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: elik1Boots_low
+      parentName: elik1_gr
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: elik1Coat_low
+      parentName: elik1_gr
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: elik1EyeL_low
+      parentName: elik1_gr
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: elik1EyeP_low
+      parentName: elik1_gr
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: elik1EyeR_low
+      parentName: elik1_gr
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: elik1EyebloL_low
+      parentName: elik1_gr
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: elik1EyebloR_low
+      parentName: elik1_gr
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: elik1Glove_low
+      parentName: elik1_gr
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: elik1HairB_low
+      parentName: elik1_gr
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: elik1HairM_low
+      parentName: elik1_gr
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: elik1Pants_low
+      parentName: elik1_gr
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: elik1Strap1_low
+      parentName: elik1_gr
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: elik1Strap2_low
+      parentName: elik1_gr
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: elik1_BoneRoot
+      parentName: elik_motion_final(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 0.9999997, z: 0.9999997}
+    - name: elik1_Base_Hip
+      parentName: elik1_BoneRoot
+      position: {x: 0.0000009611249, y: 0.038231984, z: 1.7244706}
+      rotation: {x: 0.5721437, y: -0.0000016336903, z: -0.000004254175, w: 0.8201535}
+      scale: {x: 1.0000001, y: 1.0000007, z: 1.0000007}
+    - name: elik1_coat_L_front1
+      parentName: elik1_Base_Hip
+      position: {x: -0.33050796, y: -0.32004306, z: 0.18536091}
+      rotation: {x: 0.000000059604638, y: -6.906475e-10, z: 0.000000001878561, w: 1}
+      scale: {x: 1, y: 1, z: 0.9999999}
+    - name: elik1_coat_L_front2
+      parentName: elik1_coat_L_front1
+      position: {x: -0.00060137163, y: -0.26341632, z: -0.015699606}
+      rotation: {x: 0.6935106, y: 0.69877654, z: 0.12446982, w: -0.123538174}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000004}
+    - name: elik1_coat_L_front3
+      parentName: elik1_coat_L_front2
+      position: {x: -0.2814126, y: -0.0005951823, z: -0.05749856}
+      rotation: {x: 0.23744349, y: 0.13492455, z: -0.46892855, w: 0.8399536}
+      scale: {x: 1.0000004, y: 0.9999998, z: 1.0000001}
+    - name: elik1_coat_L_front4
+      parentName: elik1_coat_L_front3
+      position: {x: -0.13834079, y: -0.21387175, z: -0.041956864}
+      rotation: {x: -0.2087131, y: -0.925033, z: -0.09013113, w: -0.30435055}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000001}
+    - name: elik1_coat_L_side1
+      parentName: elik1_Base_Hip
+      position: {x: -0.4308069, y: -0.19714378, z: -0.10006617}
+      rotation: {x: 0.00000008940697, y: 0.0000000035793164, z: -0.000000009730854, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: elik1_coat_L_side2
+      parentName: elik1_coat_L_side1
+      position: {x: -0.024046654, y: -0.2757325, z: -0.05469776}
+      rotation: {x: 0.6933838, y: 0.69890237, z: 0.124492235, w: -0.123515554}
+      scale: {x: 1, y: 1.0000001, z: 1.0000002}
+    - name: elik1_coat_L_side3
+      parentName: elik1_coat_L_side2
+      position: {x: -0.3064584, y: -0.003119414, z: -0.050129145}
+      rotation: {x: -0.000000014901161, y: -0, z: -0.0050129294, w: 0.9999875}
+      scale: {x: 0.99999994, y: 0.9999999, z: 0.9999998}
+    - name: elik1_coat_L_side4
+      parentName: elik1_coat_L_side3
+      position: {x: -0.23868911, y: 0.0061257593, z: -0.030652711}
+      rotation: {x: -0.68987155, y: -0.7023695, z: -0.12510987, w: -0.122889936}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: elik1_coat_R_front1
+      parentName: elik1_Base_Hip
+      position: {x: 0.33051434, y: -0.3200368, z: 0.1853569}
+      rotation: {x: 1, y: 0.0000050977997, z: -0.000007526969, w: -1.1792215e-14}
+      scale: {x: 1, y: 1.0000004, z: 1.0000006}
+    - name: elik1_coat_R_front2
+      parentName: elik1_coat_R_front1
+      position: {x: 0.00060077, y: 0.26342115, z: 0.015700925}
+      rotation: {x: -0.6935106, y: -0.69877654, z: -0.12446988, w: 0.12353816}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
+    - name: elik1_coat_R_front3
+      parentName: elik1_coat_R_front2
+      position: {x: 0.28141353, y: 0.0005957029, z: 0.057498}
+      rotation: {x: -0.23744342, y: -0.13492453, z: 0.46892852, w: -0.8399536}
+      scale: {x: 1.0000005, y: 1.0000007, z: 1}
+    - name: elik1_coat_R_front4
+      parentName: elik1_coat_R_front3
+      position: {x: 0.13833891, y: 0.21386932, z: 0.041957274}
+      rotation: {x: -0.20871314, y: -0.925033, z: -0.09013113, w: -0.30435047}
+      scale: {x: 1.0000002, y: 0.9999998, z: 0.9999998}
+    - name: elik1_coat_R_side1
+      parentName: elik1_Base_Hip
+      position: {x: 0.43080756, y: -0.19713771, z: -0.10007192}
+      rotation: {x: 1, y: 0.000005108989, z: -0.0000075352573, w: -0.000000089407}
+      scale: {x: 1, y: 1.000001, z: 1.0000008}
+    - name: elik1_coat_R_side2
+      parentName: elik1_coat_R_side1
+      position: {x: 0.024047002, y: 0.27573264, z: 0.054697983}
+      rotation: {x: -0.6933838, y: -0.69890237, z: -0.12449223, w: 0.12351555}
+      scale: {x: 1, y: 1, z: 0.9999997}
+    - name: elik1_coat_R_side3
+      parentName: elik1_coat_R_side2
+      position: {x: 0.3064599, y: 0.0031193432, z: 0.050129097}
+      rotation: {x: 0.000000022351744, y: -0.00000005960465, z: -0.00501293, w: 0.9999874}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: elik1_coat_R_side4
+      parentName: elik1_coat_R_side3
+      position: {x: 0.2386894, y: -0.006125863, z: 0.030652758}
+      rotation: {x: 0.68987155, y: 0.7023695, z: 0.1251098, w: 0.12288992}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: elik1_coat_L_back1
+      parentName: elik1_Base_Hip
+      position: {x: -0.21587878, y: -0.09398547, z: -0.367343}
+      rotation: {x: 0.00000008940697, y: -0.000000021787741, z: -0.000000008209895, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 0.9999999}
+    - name: elik1_coat_L_back2
+      parentName: elik1_coat_L_back1
+      position: {x: -0.010962003, y: -0.3227748, z: -0.067594625}
+      rotation: {x: 0.5515447, y: 0.44249555, z: 0.5515428, w: 0.4424893}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: elik1_coat_L_back3
+      parentName: elik1_coat_L_back2
+      position: {x: -0.29659232, y: 0.025761958, z: 0.019128243}
+      rotation: {x: -0.00000008940696, y: -0.000000059604638, z: 0.055292256, w: 0.99847025}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
+    - name: elik1_coat_L_back4
+      parentName: elik1_coat_L_back3
+      position: {x: -0.2588041, y: -0.00046798142, z: -3.1427137e-13}
+      rotation: {x: -0.575169, y: -0.41131744, z: -0.57516384, w: 0.41132125}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: elik1_coat_R_back1
+      parentName: elik1_Base_Hip
+      position: {x: 0.215874, y: -0.093982644, z: -0.36734596}
+      rotation: {x: 1, y: 0.000005114375, z: -0.0000075456783, w: -2.655471e-14}
+      scale: {x: 1.0000001, y: 1.0000008, z: 1.0000007}
+    - name: elik1_coat_R_back2
+      parentName: elik1_coat_R_back1
+      position: {x: 0.010961859, y: 0.32277292, z: 0.067594096}
+      rotation: {x: 0.5515447, y: 0.44249544, z: 0.5515428, w: 0.4424893}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000002}
+    - name: elik1_coat_R_back3
+      parentName: elik1_coat_R_back2
+      position: {x: 0.29659522, y: -0.025761886, z: -0.019127999}
+      rotation: {x: 0.000000074505806, y: -0.00000008940697, z: 0.05529231, w: 0.9984703}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: elik1_coat_R_back4
+      parentName: elik1_coat_R_back3
+      position: {x: 0.2588038, y: 0.0004683272, z: -1.14589935e-11}
+      rotation: {x: -0.57516915, y: -0.4113175, z: -0.5751636, w: 0.41132125}
+      scale: {x: 1.0000001, y: 1.0000005, z: 1.0000006}
+    - name: elik1_Base_Pelvis
+      parentName: elik1_Base_Hip
+      position: {x: 5.820766e-13, y: 0.00000015258789, z: 0.000000038146972}
+      rotation: {x: 0.0641979, y: 0.000000020372227, z: -0.00000043716784, w: 0.9979372}
+      scale: {x: 1, y: 0.99999964, z: 0.9999992}
+    - name: elik1_Base_L_Thigh
+      parentName: elik1_Base_Pelvis
+      position: {x: -0.19118486, y: -0.19243118, z: -0.0046416284}
+      rotation: {x: -0.0027869614, y: -0.0819736, z: 0.9965921, w: -0.008767448}
+      scale: {x: 1.0000012, y: 1.0000015, z: 0.99999976}
+    - name: elik1_Base_L_Calf
+      parentName: elik1_Base_L_Thigh
+      position: {x: -0.000022392273, y: 0.61939794, z: -0.0000136137005}
+      rotation: {x: -0.057835165, y: -0.0020228026, z: 0.0029492138, w: 0.99831975}
+      scale: {x: 1.0000001, y: 0.9999996, z: 1.0000002}
+    - name: elik1_Base_L_KneeShareBone
+      parentName: elik1_Base_L_Calf
+      position: {x: -0.000000009536743, y: 0.000000076293944, z: -0.000000023841856}
+      rotation: {x: 0.028927471, y: 0.0006294262, z: -0.0015194514, w: 0.9995802}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: elik1_Base_L_Foot
+      parentName: elik1_Base_L_Calf
+      position: {x: 0.000018587112, y: 0.78707397, z: -0.000113706585}
+      rotation: {x: 0.6095776, y: 0.11673976, z: -0.13615468, w: 0.7721716}
+      scale: {x: 1.0000007, y: 1.0000001, z: 1.0000004}
+    - name: elik1_Base_L_ToeBaseShareBone
+      parentName: elik1_Base_L_Foot
+      position: {x: 0.000000743866, y: 0.3129092, z: -0.0001475525}
+      rotation: {x: 0.17638166, y: -0.025487097, z: 0.0196784, w: 0.983795}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000001}
+    - name: elik1_Base_L_ToeBase
+      parentName: elik1_Base_L_Foot
+      position: {x: 0.000012016298, y: 0.3129089, z: -0.00014413835}
+      rotation: {x: 0.1763923, y: -0.02529972, z: 0.019679422, w: 0.98379797}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1}
+    - name: elik1_Base_L_MidToe1
+      parentName: elik1_Base_L_ToeBase
+      position: {x: 0.00000076293935, y: 0.04178003, z: 0.00000078678124}
+      rotation: {x: -0.2500198, y: -0.078331664, z: 0.018361926, w: 0.96489227}
+      scale: {x: 1.0000007, y: 1.0000005, z: 1.0000001}
+    - name: elik1_Base_L_CalfTwist01
+      parentName: elik1_Base_L_Calf
+      position: {x: -0.000000009536743, y: 0.000000076293944, z: -0.000000023841856}
+      rotation: {x: 0.0000010244547, y: -0.00076372724, z: 0.00000015983822, w: 0.99999976}
+      scale: {x: 1.0000002, y: 1.0000004, z: 0.99999994}
+    - name: elik1_Base_L_CalfTwist02
+      parentName: elik1_Base_L_CalfTwist01
+      position: {x: 0.000010128021, y: 0.39353704, z: -0.00005774498}
+      rotation: {x: -0.0000036396377, y: -0.023494828, z: -0.00000036810405, w: 0.99972403}
+      scale: {x: 1, y: 1.0000004, z: 0.9999999}
+    - name: elik1_Base_L_ThighTwist01
+      parentName: elik1_Base_L_Thigh
+      position: {x: 0.000000095367426, y: -0.00000030517577, z: 0.0000000047683715}
+      rotation: {x: -0.000008501521, y: -0.0019822575, z: 0.000063368665, w: 0.99999803}
+      scale: {x: 1.0000006, y: 1.0000007, z: 1}
+    - name: elik1_Base_L_ThighTwist02
+      parentName: elik1_Base_L_ThighTwist01
+      position: {x: 0.00002796173, y: 0.30971923, z: -0.0000032997132}
+      rotation: {x: -0.000006377784, y: 0.001985714, z: -0.00005464856, w: 0.99999803}
+      scale: {x: 1.0000002, y: 1, z: 1}
+    - name: elik1_Base_R_Thigh
+      parentName: elik1_Base_Pelvis
+      position: {x: 0.19118474, y: -0.19243118, z: -0.0046451567}
+      rotation: {x: 0.0028103816, y: -0.08195189, z: 0.99659383, w: 0.008759398}
+      scale: {x: 1.0000015, y: 1.0000011, z: 0.99999964}
+    - name: elik1_Base_R_Calf
+      parentName: elik1_Base_R_Thigh
+      position: {x: 0.00002283096, y: 0.6193984, z: -0.000021848677}
+      rotation: {x: -0.05779922, y: 0.0020467914, z: -0.0029486697, w: 0.99832183}
+      scale: {x: 1.0000013, y: 1.0000012, z: 1.0000004}
+    - name: elik1_Base_R_KneeShareBone
+      parentName: elik1_Base_R_Calf
+      position: {x: 0.000000038146972, y: -0.0000003814697, z: 0}
+      rotation: {x: 0.028909411, y: -0.0006410423, z: 0.0015191414, w: 0.9995807}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
+    - name: elik1_Base_R_Foot
+      parentName: elik1_Base_R_Calf
+      position: {x: -0.000018081664, y: 0.7870739, z: -0.00012338637}
+      rotation: {x: 0.60935646, y: -0.116814375, z: 0.13612592, w: 0.7723398}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1}
+    - name: elik1_Base_R_ToeBase
+      parentName: elik1_Base_R_Foot
+      position: {x: -0.0000012016296, y: 0.31290877, z: 0.0000004005432}
+      rotation: {x: 0.17659752, y: 0.025300138, z: -0.019699192, w: 0.9837608}
+      scale: {x: 1.0000004, y: 1.0000005, z: 0.99999994}
+    - name: elik1_Base_R_MidToe1
+      parentName: elik1_Base_R_ToeBase
+      position: {x: -0.0000001335144, y: 0.04176523, z: -0.0000009584427}
+      rotation: {x: -0.2502429, y: 0.0782659, z: -0.018308384, w: 0.96484077}
+      scale: {x: 1, y: 0.99999994, z: 0.9999997}
+    - name: elik1_Base_R_ToeBaseShareBone
+      parentName: elik1_Base_R_Foot
+      position: {x: 0.0000025367735, y: 0.31290907, z: 0.000004138946}
+      rotation: {x: 0.17659725, y: 0.025489796, z: -0.01966946, w: 0.98375654}
+      scale: {x: 1.0000002, y: 1.0000004, z: 0.9999998}
+    - name: elik1_Base_R_CalfTwist01
+      parentName: elik1_Base_R_Calf
+      position: {x: 0.000000038146972, y: -0.0000003814697, z: 0}
+      rotation: {x: -0.000069499, y: 0.000776317, z: 0.000011798777, w: 0.9999997}
+      scale: {x: 1.0000012, y: 1.0000008, z: 1.0000001}
+    - name: elik1_Base_R_CalfTwist02
+      parentName: elik1_Base_R_CalfTwist01
+      position: {x: -0.0000003814697, y: 0.3935369, z: -0.000002002716}
+      rotation: {x: 0.000066989094, y: 0.023457916, z: -0.000010005543, w: 0.9997248}
+      scale: {x: 0.99999994, y: 1.0000002, z: 0.9999996}
+    - name: elik1_Base_R_ThighTwist01
+      parentName: elik1_Base_R_Thigh
+      position: {x: 0.000000019073484, y: 0.00000015258787, z: 0.000000004768371}
+      rotation: {x: -0.000015190084, y: 0.001983453, z: -0.0000084278, w: 0.9999981}
+      scale: {x: 1.000001, y: 1.000001, z: 1.0000002}
+    - name: elik1_Base_R_ThighTwist02
+      parentName: elik1_Base_R_ThighTwist01
+      position: {x: 0.0000062179565, y: 0.3096765, z: 0.0000007390976}
+      rotation: {x: -0.00000019178333, y: -0.0019865772, z: 0.000000257787, w: 0.9999981}
+      scale: {x: 1.0000007, y: 1.0000006, z: 0.99999994}
+    - name: elik1_Base_Waist
+      parentName: elik1_Base_Hip
+      position: {x: 0.00000027355213, y: 0.17644103, z: 0.034410894}
+      rotation: {x: 0.20035937, y: -0.00001454562, z: 0.00000017606362, w: 0.9797225}
+      scale: {x: 1, y: 0.9999999, z: 0.9999999}
+    - name: elik1_Base_Spine01
+      parentName: elik1_Base_Waist
+      position: {x: 0.00000038917526, y: 0.08764389, z: -0.0000018119812}
+      rotation: {x: 0.003933534, y: -0.00000041034218, z: -0.000002378518, w: 0.9999923}
+      scale: {x: 1, y: 0.99999964, z: 0.9999995}
+    - name: elik1_Base_Spine02
+      parentName: elik1_Base_Spine01
+      position: {x: -0.0000000039918815, y: 0.21909316, z: 0.000010433197}
+      rotation: {x: -0.087299325, y: 0.000020975891, z: 0.0000015944632, w: 0.99618214}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+    - name: elik1_Base_L_Clavicle
+      parentName: elik1_Base_Spine02
+      position: {x: -0.1908239, y: 0.35930723, z: -0.0049626445}
+      rotation: {x: -0.040885646, y: -0.12322738, z: 0.6986161, w: 0.7036185}
+      scale: {x: 0.9999999, y: 1.0000004, z: 0.99999964}
+    - name: elik1_Base_L_Upperarm
+      parentName: elik1_Base_L_Clavicle
+      position: {x: -0.00000366211, y: 0.28649276, z: 0.0000052070623}
+      rotation: {x: 0.11517331, y: -0.0010944303, z: -0.0038934979, w: 0.99333715}
+      scale: {x: 0.9999998, y: 0.99999946, z: 0.99999976}
+    - name: elik1_Base_L_UpperarmTwist01
+      parentName: elik1_Base_L_Upperarm
+      position: {x: -0, y: -0.000000076293944, z: -0.000000057220458}
+      rotation: {x: 0.00000065565104, y: 0.0002095912, z: 0.0000005893307, w: 1}
+      scale: {x: 1.0000001, y: 1.0000006, z: 0.9999998}
+    - name: elik1_Base_L_UpperarmTwist02
+      parentName: elik1_Base_L_UpperarmTwist01
+      position: {x: 0.0000012207031, y: 0.25221118, z: -0.0000017738342}
+      rotation: {x: -0.0000015049077, y: -0.0002110507, z: -0.0000011155303, w: 1}
+      scale: {x: 1.0000008, y: 1.000001, z: 0.99999976}
+    - name: elik1_Base_L_Forearm
+      parentName: elik1_Base_L_Upperarm
+      position: {x: 0.0000021362305, y: 0.50442314, z: 0.000002002716}
+      rotation: {x: 0.0012271701, y: 0.0017800545, z: 0.0003656378, w: 0.9999977}
+      scale: {x: 1.0000019, y: 1.0000014, z: 0.99999976}
+    - name: elik1_Base_L_ForearmTwist01
+      parentName: elik1_Base_L_Forearm
+      position: {x: -0.00000030517577, y: 0, z: -0.000000057220458}
+      rotation: {x: -0.00000065960904, y: 0.0017162714, z: 0.000000009424636, w: 0.9999985}
+      scale: {x: 1.0000006, y: 1.0000007, z: 0.9999999}
+    - name: elik1_Base_L_ForearmTwist02
+      parentName: elik1_Base_L_ForearmTwist01
+      position: {x: 0.0000024414064, y: 0.23106577, z: 0.0000067901615}
+      rotation: {x: -0.0000044089784, y: -0.0043788925, z: 0.0000025356796, w: 0.99999046}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1}
+    - name: elik1_Base_L_ElbowShareBone
+      parentName: elik1_Base_L_Forearm
+      position: {x: -0.00000030517577, y: 0, z: -0.000000057220458}
+      rotation: {x: -0.03411759, y: 0.0009878291, z: -0.03164679, w: 0.99891615}
+      scale: {x: 0.9999997, y: 1.0000002, z: 0.9999998}
+    - name: elik1_Base_L_Hand
+      parentName: elik1_Base_L_Forearm
+      position: {x: 0.0000057983398, y: 0.46213073, z: 0.000011863708}
+      rotation: {x: -0.020286331, y: 0.00013035489, z: -0.0070062657, w: 0.99976975}
+      scale: {x: 1.0000007, y: 1.0000014, z: 1.0000001}
+    - name: elik1_Base_L_Mid1
+      parentName: elik1_Base_L_Hand
+      position: {x: 0.005932617, y: 0.2377626, z: 0.05044006}
+      rotation: {x: 0.026088707, y: 0.0029432224, z: 0.01486405, w: 0.9995448}
+      scale: {x: 1.0000014, y: 1.0000014, z: 1}
+    - name: elik1_Base_L_Mid2
+      parentName: elik1_Base_L_Mid1
+      position: {x: -0.00000030517577, y: 0.066293485, z: -0.000000019073486}
+      rotation: {x: -0.001983586, y: -0.0035000818, z: 0.00009468878, w: 0.9999919}
+      scale: {x: 1.0000001, y: 0.99999994, z: 0.9999999}
+    - name: elik1_Base_L_Mid3
+      parentName: elik1_Base_L_Mid2
+      position: {x: -0.00000030517577, y: 0.034590453, z: -0.000000019073486}
+      rotation: {x: 0.000804188, y: -0.00009725495, z: 0.00063708477, w: 0.9999995}
+      scale: {x: 0.9999997, y: 0.99999994, z: 0.9999995}
+    - name: elik1_Base_L_Index1
+      parentName: elik1_Base_L_Hand
+      position: {x: -0.005859985, y: 0.21993911, z: 0.09487903}
+      rotation: {x: 0.026049, y: 0.0035574492, z: 0.014934239, w: 0.9995428}
+      scale: {x: 1.0000011, y: 1.0000011, z: 0.99999994}
+    - name: elik1_Base_L_Index2
+      parentName: elik1_Base_L_Index1
+      position: {x: -0.00000030517577, y: 0.0681134, z: -0.000000009536743}
+      rotation: {x: 0.0022036463, y: -0.005252472, z: 0.0004660312, w: 0.9999837}
+      scale: {x: 1.0000005, y: 1.0000004, z: 0.99999976}
+    - name: elik1_Base_L_Index3
+      parentName: elik1_Base_L_Index2
+      position: {x: 0.00000030517577, y: 0.037198637, z: -0.000000009536743}
+      rotation: {x: 0.001868895, y: 0.002856461, z: 0.2679573, w: 0.96342474}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999998}
+    - name: elik1_Base_L_Ring1
+      parentName: elik1_Base_L_Hand
+      position: {x: 0.00000030517577, y: 0.24301177, z: -0.000000009536743}
+      rotation: {x: 0.025379905, y: -0.00034310986, z: 0.01107459, w: 0.9996165}
+      scale: {x: 1.0000012, y: 1.0000012, z: 1.0000004}
+    - name: elik1_Base_L_Ring2
+      parentName: elik1_Base_L_Ring1
+      position: {x: -0.0000003051758, y: 0.06264619, z: -0.000000038146975}
+      rotation: {x: -0.0042860145, y: 0.00013182536, z: 0.00063747755, w: 0.99999064}
+      scale: {x: 1.0000006, y: 1.0000005, z: 0.9999995}
+    - name: elik1_Base_L_Ring3
+      parentName: elik1_Base_L_Ring2
+      position: {x: 0.0000006103516, y: 0.034413, z: 0.000000038146975}
+      rotation: {x: 0.0014985612, y: 0.00017788325, z: 0.00281275, w: 0.99999493}
+      scale: {x: 0.9999998, y: 1.0000001, z: 0.99999976}
+    - name: elik1_Base_L_Pinky1
+      parentName: elik1_Base_L_Hand
+      position: {x: -0.00585968, y: 0.24047424, z: -0.049755707}
+      rotation: {x: 0.025652032, y: -0.00018323398, z: 0.01258713, w: 0.9995917}
+      scale: {x: 1.000001, y: 1.0000014, z: 1.0000001}
+    - name: elik1_Base_L_Pinky2
+      parentName: elik1_Base_L_Pinky1
+      position: {x: -0, y: 0.0427449, z: 0.000000057220458}
+      rotation: {x: -0.009062203, y: 0.0014189963, z: -0.000007782458, w: 0.999958}
+      scale: {x: 1.0000004, y: 1.0000004, z: 0.9999999}
+    - name: elik1_Base_L_Pinky3
+      parentName: elik1_Base_L_Pinky2
+      position: {x: -0.00000030517577, y: 0.032137603, z: 0.000000019073486}
+      rotation: {x: 0.0018777594, y: -0.000119069315, z: 0.026909469, w: 0.9996361}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: elik1_Base_L_Thumb1
+      parentName: elik1_Base_L_Hand
+      position: {x: -0.04113159, y: 0.054708708, z: 0.05387}
+      rotation: {x: 0.40542823, y: 0.12043377, z: 0.06454879, w: 0.9038568}
+      scale: {x: 1.0000018, y: 1.0000024, z: 0.9999996}
+    - name: elik1_Base_L_Thumb2
+      parentName: elik1_Base_L_Thumb1
+      position: {x: -0.0000009155273, y: 0.087413326, z: 0.000000038146972}
+      rotation: {x: -0.033395156, y: 0.0012259105, z: -0.010035834, w: 0.99939114}
+      scale: {x: 1.0000001, y: 0.99999887, z: 1.0000011}
+    - name: elik1_Base_L_Thumb3
+      parentName: elik1_Base_L_Thumb2
+      position: {x: -0.0000006103515, y: 0.060466755, z: -0.00000015258787}
+      rotation: {x: -0.012065913, y: -0.0009748413, z: -0.013225234, w: 0.99983925}
+      scale: {x: 1.0000004, y: 1.0000006, z: 0.99999994}
+    - name: elik1_Base_R_Clavicle
+      parentName: elik1_Base_Spine02
+      position: {x: 0.19082405, y: 0.35930756, z: -0.0049611568}
+      rotation: {x: -0.040883087, y: 0.12322335, z: -0.6986163, w: 0.7036192}
+      scale: {x: 0.9999996, y: 1.0000004, z: 0.9999998}
+    - name: elik1_Base_R_Upperarm
+      parentName: elik1_Base_R_Clavicle
+      position: {x: 0.00000366211, y: 0.2864927, z: 0.0000051593784}
+      rotation: {x: 0.11518728, y: 0.0010929701, z: 0.0038885633, w: 0.99333566}
+      scale: {x: 1.0000011, y: 1.0000001, z: 0.9999997}
+    - name: elik1_Base_R_UpperarmTwist01
+      parentName: elik1_Base_R_Upperarm
+      position: {x: 0.00000061035155, y: 0.000000114440915, z: 0}
+      rotation: {x: 0.00000033527604, y: -0.00021342335, z: 0.000000055762925, w: 1}
+      scale: {x: 0.9999999, y: 1.0000005, z: 1.0000001}
+    - name: elik1_Base_R_UpperarmTwist02
+      parentName: elik1_Base_R_UpperarmTwist01
+      position: {x: -0.00000030517577, y: 0.25221047, z: -0.00000057220456}
+      rotation: {x: -0.0000014228981, y: 0.00021122834, z: 0.00000070554944, w: 1}
+      scale: {x: 1.0000004, y: 1.0000001, z: 0.9999995}
+    - name: elik1_Base_R_Forearm
+      parentName: elik1_Base_R_Upperarm
+      position: {x: -0.0000048828124, y: 0.5044232, z: -0.0000022697448}
+      rotation: {x: 0.0012279819, y: -0.0017799898, z: -0.00035856813, w: 0.9999976}
+      scale: {x: 1.0000013, y: 1.0000013, z: 1.0000002}
+    - name: elik1_Base_R_ForearmTwist01
+      parentName: elik1_Base_R_Forearm
+      position: {x: -0.00000030517577, y: 0, z: -0.000000076293944}
+      rotation: {x: -0.00000033446113, y: -0.0017235307, z: -0.00000040025807, w: 0.99999857}
+      scale: {x: 0.9999998, y: 1.0000002, z: 0.9999997}
+    - name: elik1_Base_R_ForearmTwist02
+      parentName: elik1_Base_R_ForearmTwist01
+      position: {x: -0.0000024414062, y: 0.23106536, z: 0.0000034713744}
+      rotation: {x: -0.0000047076064, y: 0.004379702, z: -0.0000024916908, w: 0.99999046}
+      scale: {x: 1.0000012, y: 1.0000005, z: 0.9999999}
+    - name: elik1_Base_R_ElbowShareBone
+      parentName: elik1_Base_R_Forearm
+      position: {x: -0.00000030517577, y: 0, z: -0.000000057220458}
+      rotation: {x: -0.034118075, y: -0.0009885185, z: 0.0316438, w: 0.9989163}
+      scale: {x: 0.9999996, y: 0.99999994, z: 0.99999976}
+    - name: elik1_Base_R_Hand
+      parentName: elik1_Base_R_Forearm
+      position: {x: -0.0000036621093, y: 0.46213073, z: 0.000005722046}
+      rotation: {x: -0.020293398, y: -0.00012651502, z: 0.0069991155, w: 0.9997696}
+      scale: {x: 1.0000002, y: 1.0000004, z: 0.9999996}
+    - name: elik1_Base_R_Mid1
+      parentName: elik1_Base_R_Hand
+      position: {x: -0.0059326165, y: 0.23776197, z: 0.05044001}
+      rotation: {x: 0.026087742, y: -0.002942924, z: -0.014863826, w: 0.9995449}
+      scale: {x: 1.0000007, y: 1.0000011, z: 0.9999998}
+    - name: elik1_Base_R_Mid2
+      parentName: elik1_Base_R_Mid1
+      position: {x: -0.00000061035155, y: 0.06629303, z: 0.000000057220458}
+      rotation: {x: -0.0019881069, y: 0.003499899, z: -0.000092024944, w: 0.99999195}
+      scale: {x: 1.0000004, y: 1.0000004, z: 0.9999997}
+    - name: elik1_Base_R_Mid3
+      parentName: elik1_Base_R_Mid2
+      position: {x: 0.0000003051758, y: 0.034590002, z: 0}
+      rotation: {x: 0.0008034497, y: 0.00009724401, z: -0.0006411942, w: 0.9999995}
+      scale: {x: 0.9999998, y: 0.9999997, z: 0.99999964}
+    - name: elik1_Base_R_Ring1
+      parentName: elik1_Base_R_Hand
+      position: {x: -0, y: 0.24301052, z: -0.000000057220454}
+      rotation: {x: 0.02536631, y: 0.00034379677, z: -0.011040101, w: 0.9996173}
+      scale: {x: 1.0000002, y: 1.000001, z: 0.99999976}
+    - name: elik1_Base_R_Ring2
+      parentName: elik1_Base_R_Ring1
+      position: {x: -0.0000012207031, y: 0.0626471, z: 0.000000038146972}
+      rotation: {x: -0.0042500803, y: -0.00013183252, z: -0.00069697836, w: 0.99999076}
+      scale: {x: 1.0000005, y: 1, z: 1}
+    - name: elik1_Base_R_Ring3
+      parentName: elik1_Base_R_Ring2
+      position: {x: 0.00000061035155, y: 0.03441269, z: -0.000000038146972}
+      rotation: {x: 0.001467333, y: -0.0001775593, z: -0.0027872655, w: 0.9999951}
+      scale: {x: 0.99999994, y: 0.99999964, z: 0.99999946}
+    - name: elik1_Base_R_Index1
+      parentName: elik1_Base_R_Hand
+      position: {x: 0.0058596795, y: 0.21993834, z: 0.09487899}
+      rotation: {x: 0.026047047, y: -0.0035573514, z: -0.014935104, w: 0.9995429}
+      scale: {x: 1.0000005, y: 1.0000008, z: 0.99999976}
+    - name: elik1_Base_R_Index2
+      parentName: elik1_Base_R_Index1
+      position: {x: 0.00000030517577, y: 0.06811371, z: 0}
+      rotation: {x: 0.0022050298, y: 0.005252965, z: -0.00044863223, w: 0.99998367}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.9999994}
+    - name: elik1_Base_R_Index3
+      parentName: elik1_Base_R_Index2
+      position: {x: -0.00000030517577, y: 0.03719818, z: -0.000000019073486}
+      rotation: {x: 0.0011076566, y: -0.000031232827, z: -0.0015478451, w: 0.9999982}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: elik1_Base_R_Pinky1
+      parentName: elik1_Base_R_Hand
+      position: {x: 0.0058596795, y: 0.24047329, z: -0.04975575}
+      rotation: {x: 0.025658397, y: 0.0001829515, z: -0.01259038, w: 0.9995915}
+      scale: {x: 1.0000001, y: 1.0000012, z: 0.9999999}
+    - name: elik1_Base_R_Pinky2
+      parentName: elik1_Base_R_Pinky1
+      position: {x: 0.0000009155273, y: 0.042745512, z: 0}
+      rotation: {x: -0.009040828, y: -0.0014197151, z: -0.00001541561, w: 0.9999582}
+      scale: {x: 1.000001, y: 0.9999996, z: 1.0000002}
+    - name: elik1_Base_R_Pinky3
+      parentName: elik1_Base_R_Pinky2
+      position: {x: -0.0000012207031, y: 0.032137603, z: -0.000000038146972}
+      rotation: {x: 0.0018745926, y: 0.00011970074, z: -0.026924621, w: 0.99963576}
+      scale: {x: 0.9999996, y: 1.0000004, z: 0.99999964}
+    - name: elik1_Base_R_Thumb1
+      parentName: elik1_Base_R_Hand
+      position: {x: 0.041132197, y: 0.05470794, z: 0.053869966}
+      rotation: {x: 0.4054329, y: -0.12042289, z: -0.06455634, w: 0.9038557}
+      scale: {x: 1.0000008, y: 1.0000021, z: 1.0000001}
+    - name: elik1_Base_R_Thumb2
+      parentName: elik1_Base_R_Thumb1
+      position: {x: 0.0000012207031, y: 0.08741363, z: 0.000000038146972}
+      rotation: {x: -0.03338817, y: -0.0012281899, z: 0.010031178, w: 0.9993914}
+      scale: {x: 1.0000004, y: 0.9999991, z: 1.0000004}
+    - name: elik1_Base_R_Thumb3
+      parentName: elik1_Base_R_Thumb2
+      position: {x: -0.00000030517577, y: 0.060466155, z: -0.00000023841858}
+      rotation: {x: -0.012067999, y: 0.0009747491, z: 0.013228811, w: 0.9998393}
+      scale: {x: 0.9999996, y: 0.99999994, z: 1.0000001}
+    - name: elik1_Base_R_RibsTwist
+      parentName: elik1_Base_Spine02
+      position: {x: 0.177, y: 0.07544886, z: 0.13688448}
+      rotation: {x: 0.0000010010775, y: 0.63662887, z: 0.7711704, w: 0.000009364962}
+      scale: {x: 0.99999976, y: 0.99999917, z: 0.99999964}
+    - name: elik1_Base_R_Breast
+      parentName: elik1_Base_R_RibsTwist
+      position: {x: -0.0000008211343, y: 0.09402416, z: 0.004578998}
+      rotation: {x: -0.000000029800795, y: 0.000000001971784, z: 0.00000022779096, w: 1}
+      scale: {x: 1.0000011, y: 1.0000002, z: 1.0000002}
+    - name: elik1_Base_L_RibsTwist
+      parentName: elik1_Base_Spine02
+      position: {x: -0.177, y: 0.07534221, z: 0.13694619}
+      rotation: {x: -0.000008969694, y: 0.63662887, z: 0.7711704, w: -0.0000012240351}
+      scale: {x: 1.0000001, y: 0.9999994, z: 0.99999964}
+    - name: elik1_Base_L_Breast
+      parentName: elik1_Base_L_RibsTwist
+      position: {x: -0.00000060418097, y: 0.09402406, z: 0.0045786924}
+      rotation: {x: -0.000000029802322, y: 0.0000000014493363, z: 1.0732035e-10, w: 1}
+      scale: {x: 1.0000006, y: 0.9999999, z: 1.0000001}
+    - name: elik1_Base_NeckTwist01
+      parentName: elik1_Base_Spine02
+      position: {x: 0.00000007670402, y: 0.4453961, z: -0.000040569306}
+      rotation: {x: 0.2868222, y: 0.000014753285, z: 0.0000054360285, w: 0.95798385}
+      scale: {x: 0.99999994, y: 0.99999934, z: 0.99999934}
+    - name: elik1_Base_NeckTwist02
+      parentName: elik1_Base_NeckTwist01
+      position: {x: -0.000000004428439, y: 0.078355715, z: -0.000001373291}
+      rotation: {x: 0.000009268521, y: 0.000014180715, z: 0.00000045652627, w: 1}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000002}
+    - name: elik1_Base_Head
+      parentName: elik1_Base_NeckTwist02
+      position: {x: 0.00000006753951, y: 0.07835586, z: -0.0000022888182}
+      rotation: {x: -0.117614396, y: -0.00003702062, z: -0.00000043724086, w: 0.9930594}
+      scale: {x: 1, y: 1.0000002, z: 0.99999964}
+    - name: elik1_Base_FacialBone
+      parentName: elik1_Base_Head
+      position: {x: 0.0000008076323, y: 0.12438673, z: 0.005009733}
+      rotation: {x: 0.4507108, y: -0.5448506, z: -0.45071733, w: 0.54484075}
+      scale: {x: 0.99999964, y: 1.0000005, z: 1.0000002}
+    - name: elik1_Base_R_Eye
+      parentName: elik1_Base_FacialBone
+      position: {x: 0.004747546, y: 0.0959616, z: -0.064}
+      rotation: {x: -0.7071067, y: -0.0000039041042, z: 0.70710695, w: -0.0000040653676}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1.0000007}
+    - name: elik1_Base_L_Eye
+      parentName: elik1_Base_FacialBone
+      position: {x: 0.004748403, y: 0.09596011, z: 0.064}
+      rotation: {x: -0.70710665, y: 0.0000006556509, z: 0.70710695, w: 0.00000055515477}
+      scale: {x: 1, y: 0.99999994, z: 1.0000006}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
