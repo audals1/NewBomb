@@ -51,89 +51,80 @@ MonoBehaviour:
   - {fileID: 5405478714814572822}
   - {fileID: 839386602319948018}
   - {fileID: 6855087419305670547}
-  m_UpdateRate: 60
+  m_UpdateRate: 120
   m_UpdateMode: 3
-  m_Damping: 0.1
+  m_Damping: 0.2
   m_DampingDistrib:
     serializedVersion: 2
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_Elasticity: 0.1
+  m_Elasticity: 0.005
   m_ElasticityDistrib:
     serializedVersion: 2
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_Stiffness: 0.1
+  m_Stiffness: 0.9
   m_StiffnessDistrib:
     serializedVersion: 2
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_Inert: 0.1
+  m_Inert: 0.5
   m_InertDistrib:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
       value: 1
-      inSlope: -1.0336233
-      outSlope: -1.0336233
+      inSlope: 0
+      outSlope: 0
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.33333334
+      outWeight: 0
     - serializedVersion: 3
-      time: 0.9583435
-      value: 0.009433746
-      inSlope: -1.0336233
-      outSlope: -1.0336233
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
       tangentMode: 34
       weightedMode: 0
-      inWeight: 0.33333334
+      inWeight: 0
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_Friction: 0.1
+  m_Friction: 0
   m_FrictionDistrib:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
       value: 1
-      inSlope: -0.4378781
-      outSlope: -0.4378781
+      inSlope: 0
+      outSlope: 0
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.33333334
+      outWeight: 0
     - serializedVersion: 3
-      time: 0.59876287
-      value: 0.73781484
-      inSlope: -1.1732447
-      outSlope: -1.1732447
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
       tangentMode: 34
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.9791565
-      value: 0.011791229
-      inSlope: -1.9086114
-      outSlope: -1.9086114
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
+      inWeight: 0
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_Radius: 0.06
+  m_Radius: 0
   m_RadiusDistrib:
     serializedVersion: 2
     m_Curve: []
@@ -141,7 +132,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   m_EndLength: 0
-  m_EndOffset: {x: -0.13, y: -0.1, z: 0}
+  m_EndOffset: {x: 0, y: 0, z: 0}
   m_Gravity: {x: 0, y: 0, z: 0}
   m_Force: {x: 0, y: 0, z: 0}
   m_BlendWeight: 1
@@ -172,87 +163,78 @@ MonoBehaviour:
   - {fileID: 2757302478670282147}
   m_UpdateRate: 60
   m_UpdateMode: 3
-  m_Damping: 0.1
+  m_Damping: 0.2
   m_DampingDistrib:
     serializedVersion: 2
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_Elasticity: 0.1
+  m_Elasticity: 0.005
   m_ElasticityDistrib:
     serializedVersion: 2
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_Stiffness: 0.1
+  m_Stiffness: 0.9
   m_StiffnessDistrib:
     serializedVersion: 2
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_Inert: 0.1
+  m_Inert: 0.5
   m_InertDistrib:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
       value: 1
-      inSlope: -1.0212872
-      outSlope: -1.0212872
+      inSlope: 0
+      outSlope: 0
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.33333334
+      outWeight: 0
     - serializedVersion: 3
-      time: 0.9791565
-      value: 0
-      inSlope: -1.0212872
-      outSlope: -1.0212872
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
       tangentMode: 34
       weightedMode: 0
-      inWeight: 0.33333334
+      inWeight: 0
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_Friction: 0.1
+  m_Friction: 0
   m_FrictionDistrib:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
       value: 1
-      inSlope: -0.4675505
-      outSlope: -0.4675505
+      inSlope: 0
+      outSlope: 0
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.77101165
-      value: 0.63951313
-      inSlope: -1.6353108
-      outSlope: -1.6353108
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      outWeight: 0
     - serializedVersion: 3
       time: 1
-      value: -0.002357483
-      inSlope: -2.803071
-      outSlope: -2.803071
+      value: 1
+      inSlope: 0
+      outSlope: 0
       tangentMode: 34
       weightedMode: 0
-      inWeight: 0.33333334
+      inWeight: 0
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_Radius: 0.06
+  m_Radius: 0
   m_RadiusDistrib:
     serializedVersion: 2
     m_Curve: []
@@ -260,7 +242,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   m_EndLength: 0
-  m_EndOffset: {x: 0.13, y: -0.1, z: 0}
+  m_EndOffset: {x: 0, y: 0, z: 0}
   m_Gravity: {x: 0, y: 0, z: 0}
   m_Force: {x: 0, y: 0, z: 0}
   m_BlendWeight: 1

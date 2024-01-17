@@ -82,7 +82,522 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: sindy_low_final(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: sindy1_gr
+      parentName: sindy_low_final(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: sindy1_Body_low
+      parentName: sindy1_gr
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: sindy1_ClothA_low
+      parentName: sindy1_gr
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: sindy1_ClothC_low
+      parentName: sindy1_gr
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: sindy1_ClothM_low
+      parentName: sindy1_gr
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: sindy1_EyeL_low
+      parentName: sindy1_gr
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: sindy1_EyeR_low
+      parentName: sindy1_gr
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: sindy1_EyebloL_low
+      parentName: sindy1_gr
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: sindy1_EyebloR_low
+      parentName: sindy1_gr
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: sindy1_HairB_low
+      parentName: sindy1_gr
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: sindy1_HairM_low
+      parentName: sindy1_gr
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: sindy1_BoneRoot
+      parentName: sindy_low_final(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1.0000005, z: 1.0000005}
+    - name: sindy1_Base_Hip
+      parentName: sindy1_BoneRoot
+      position: {x: -0.00000341378, y: 0.0074327528, z: 1.7072924}
+      rotation: {x: 0.7947035, y: 0.000006121926, z: 0.000009172853, w: 0.6069978}
+      scale: {x: 1, y: 1.0000004, z: 1.0000004}
+    - name: sindy1_Base_Pelvis
+      parentName: sindy1_Base_Hip
+      position: {x: 2.8766646e-12, y: 0.00000015771892, z: -0.0000000016189428}
+      rotation: {x: 0.13207138, y: -5.456968e-12, z: 0.00000013082172, w: 0.99124026}
+      scale: {x: 1, y: 1, z: 1}
+    - name: sindy1_Base_L_Thigh
+      parentName: sindy1_Base_Pelvis
+      position: {x: -0.095695026, y: -0.14717618, z: 0.039523065}
+      rotation: {x: -0.0011360253, y: 0.29868895, z: 0.9543487, w: -0.0015321153}
+      scale: {x: 1.0000004, y: 1.0000005, z: 1}
+    - name: sindy1_Base_L_Calf
+      parentName: sindy1_Base_L_Thigh
+      position: {x: -0.000025960344, y: 0.7147681, z: -0.000015933092}
+      rotation: {x: -0.083571166, y: -0.0016516319, z: 0.017438918, w: 0.99634784}
+      scale: {x: 1.0000006, y: 1.0000001, z: 1.0000001}
+    - name: sindy1_Base_L_KneeShareBone
+      parentName: sindy1_Base_L_Calf
+      position: {x: 0.000000009536743, y: 0, z: -0.0000000333786}
+      rotation: {x: 0.041809715, y: 0.00039639854, z: -0.008796472, w: 0.9990868}
+      scale: {x: 0.9999998, y: 0.9999997, z: 0.99999994}
+    - name: sindy1_Base_L_Foot
+      parentName: sindy1_Base_L_Calf
+      position: {x: 0.000015615598, y: 0.6600522, z: -0.00009537879}
+      rotation: {x: 0.4219689, y: 0.09867114, z: -0.11783571, w: 0.8934881}
+      scale: {x: 0.9999998, y: 0.9999997, z: 1.0000001}
+    - name: sindy1_Base_L_ToeBaseShareBone
+      parentName: sindy1_Base_L_Foot
+      position: {x: 0.00000046730045, y: 0.20726323, z: -0.00009781838}
+      rotation: {x: 0.17638193, y: -0.025487171, z: 0.019678472, w: 0.983795}
+      scale: {x: 1.0000001, y: 1.0000002, z: 0.9999998}
+    - name: sindy1_Base_L_ToeBase
+      parentName: sindy1_Base_L_Foot
+      position: {x: 0.000007938302, y: 0.20726307, z: -0.00009552043}
+      rotation: {x: 0.17639245, y: -0.025299806, z: 0.01967938, w: 0.9837979}
+      scale: {x: 0.99999994, y: 1, z: 0.9999997}
+    - name: sindy1_Base_L_MidToe1
+      parentName: sindy1_Base_L_ToeBase
+      position: {x: 0.00000043869014, y: 0.02987706, z: 0.0000005722045}
+      rotation: {x: -0.21927223, y: -0.06704745, z: 0.06574769, w: 0.9711342}
+      scale: {x: 1, y: 1.0000002, z: 1.0000004}
+    - name: sindy1_Base_L_CalfTwist01
+      parentName: sindy1_Base_L_Calf
+      position: {x: 0.000000009536743, y: 0, z: -0.0000000333786}
+      rotation: {x: 0.0000010803341, y: -0.0008035032, z: 0.00000015032127, w: 0.9999997}
+      scale: {x: 1.0000002, y: 0.99999994, z: 1}
+    - name: sindy1_Base_L_CalfTwist02
+      parentName: sindy1_Base_L_CalfTwist01
+      position: {x: 0.000008478164, y: 0.33002633, z: -0.00004837036}
+      rotation: {x: -0.0000035033736, y: -0.008661961, z: -0.00000042173062, w: 0.9999625}
+      scale: {x: 1.0000008, y: 1.0000007, z: 1}
+    - name: sindy1_Base_L_ThighTwist01
+      parentName: sindy1_Base_L_Thigh
+      position: {x: -0.000000009536744, y: 0, z: -0.00000014781952}
+      rotation: {x: -0.000008419311, y: -0.0010411262, z: 0.000063362255, w: 0.99999946}
+      scale: {x: 1.0000004, y: 1.0000001, z: 0.9999998}
+    - name: sindy1_Base_L_ThighTwist02
+      parentName: sindy1_Base_L_ThighTwist01
+      position: {x: 0.0000322628, y: 0.35740715, z: -0.0000037956238}
+      rotation: {x: -0.0000065119602, y: 0.0010445797, z: -0.000054640645, w: 0.99999946}
+      scale: {x: 1.0000001, y: 0.9999996, z: 1}
+    - name: sindy1_Base_R_Thigh
+      parentName: sindy1_Base_Pelvis
+      position: {x: 0.09569319, y: -0.14717628, z: 0.03952771}
+      rotation: {x: 0.0011272208, y: 0.29871047, z: 0.9543419, w: 0.0015362512}
+      scale: {x: 1.0000007, y: 1.000001, z: 1.0000001}
+    - name: sindy1_Base_R_ThighTwist01
+      parentName: sindy1_Base_R_Thigh
+      position: {x: -0.000000028610229, y: 0, z: -0.000000104904174}
+      rotation: {x: -0.00001528686, y: 0.0010424991, z: -0.000008413655, w: 0.9999995}
+      scale: {x: 1.0000004, y: 1.0000005, z: 0.9999998}
+    - name: sindy1_Base_R_ThighTwist02
+      parentName: sindy1_Base_R_ThighTwist01
+      position: {x: 0.000007247925, y: 0.35735804, z: 0.0000008440018}
+      rotation: {x: -0.0000001810422, y: -0.0010456218, z: 0.00000026813586, w: 0.99999946}
+      scale: {x: 1.0000005, y: 1.0000006, z: 1.0000001}
+    - name: sindy1_Base_R_Calf
+      parentName: sindy1_Base_R_Thigh
+      position: {x: 0.000026355827, y: 0.7147677, z: -0.000025246329}
+      rotation: {x: -0.083538465, y: 0.0016630094, z: -0.01743774, w: 0.9963506}
+      scale: {x: 1.0000008, y: 1.0000007, z: 0.9999998}
+    - name: sindy1_Base_R_KneeShareBone
+      parentName: sindy1_Base_R_Calf
+      position: {x: 0.000000028610227, y: -0.00000015258787, z: 0.000000004768371}
+      rotation: {x: 0.041793287, y: -0.00040252312, z: 0.00879584, w: 0.9990875}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: sindy1_Base_R_Foot
+      parentName: sindy1_Base_R_Calf
+      position: {x: -0.000015174987, y: 0.66005296, z: -0.00010342936}
+      rotation: {x: 0.42171597, y: -0.09873646, z: 0.11781363, w: 0.89360327}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000002}
+    - name: sindy1_Base_R_ToeBase
+      parentName: sindy1_Base_R_Foot
+      position: {x: -0.000000786221, y: 0.20726292, z: 0.00000026011585}
+      rotation: {x: 0.17659795, y: 0.02530019, z: -0.019699331, w: 0.9837607}
+      scale: {x: 1.0000007, y: 1.0000008, z: 0.9999997}
+    - name: sindy1_Base_R_MidToe1
+      parentName: sindy1_Base_R_ToeBase
+      position: {x: -0.00000012397766, y: 0.029866436, z: -0.00000069141385}
+      rotation: {x: -0.2195028, y: 0.0670243, z: -0.065706424, w: 0.97108644}
+      scale: {x: 0.99999946, y: 0.99999887, z: 1.0000005}
+    - name: sindy1_Base_R_ToeBaseShareBone
+      parentName: sindy1_Base_R_Foot
+      position: {x: 0.000001707077, y: 0.20726317, z: 0.0000027370452}
+      rotation: {x: 0.17659728, y: 0.025489882, z: -0.019669533, w: 0.98375654}
+      scale: {x: 0.9999997, y: 1.0000004, z: 0.99999946}
+    - name: sindy1_Base_R_CalfTwist01
+      parentName: sindy1_Base_R_Calf
+      position: {x: 0.000000028610227, y: -0.00000015258787, z: 0.000000004768371}
+      rotation: {x: -0.000069595866, y: 0.00081520015, z: 0.000011798618, w: 0.99999964}
+      scale: {x: 1.0000004, y: 1.0000005, z: 0.99999994}
+    - name: sindy1_Base_R_CalfTwist02
+      parentName: sindy1_Base_R_CalfTwist01
+      position: {x: -0.0000003242492, y: 0.3300264, z: -0.0000015878676}
+      rotation: {x: 0.000066962195, y: 0.008623044, z: -0.00001099923, w: 0.9999628}
+      scale: {x: 0.99999994, y: 0.9999998, z: 1}
+    - name: sindy1_Base_Waist
+      parentName: sindy1_Base_Hip
+      position: {x: 0.00000020483213, y: 0.13211775, z: 0.025766453}
+      rotation: {x: -0.086796336, y: 0.0000005061042, z: -0.00000042103323, w: 0.9962261}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: sindy1_Base_Spine01
+      parentName: sindy1_Base_Waist
+      position: {x: 0.0000003053896, y: 0.05882567, z: -0.0000011355698}
+      rotation: {x: -0.04918652, y: -0.0000006293658, z: -0.0000032978483, w: 0.99878967}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: sindy1_Base_Spine02
+      parentName: sindy1_Base_Spine01
+      position: {x: 0.00000002510959, y: 0.14539336, z: 0.0000068725913}
+      rotation: {x: -0.19554067, y: -0.000008393807, z: -0.0000023438404, w: 0.9806956}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: sindy1_Base_L_Clavicle
+      parentName: sindy1_Base_Spine02
+      position: {x: -0.08512715, y: 0.21686509, z: -0.033470683}
+      rotation: {x: 0.05894047, y: -0.2207002, z: 0.6741967, w: 0.70233625}
+      scale: {x: 0.9999997, y: 1.0000005, z: 0.99999994}
+    - name: sindy1_Base_L_Upperarm
+      parentName: sindy1_Base_L_Clavicle
+      position: {x: -0.0000014458151, y: 0.14793648, z: 0.0000026295886}
+      rotation: {x: 0.11517303, y: -0.0010942965, z: -0.003894037, w: 0.9933372}
+      scale: {x: 1.000001, y: 1.0000001, z: 0.99999946}
+    - name: sindy1_Base_L_Forearm
+      parentName: sindy1_Base_L_Upperarm
+      position: {x: 0.0000014425891, y: 0.41946143, z: 0.0000017343492}
+      rotation: {x: 0.0012274161, y: 0.0017800501, z: 0.00036623137, w: 0.9999976}
+      scale: {x: 1.0000005, y: 1.0000005, z: 1}
+    - name: sindy1_Base_L_ElbowShareBone
+      parentName: sindy1_Base_L_Forearm
+      position: {x: -0.00000030517577, y: -0.000000076293944, z: -0.000000019073486}
+      rotation: {x: -0.004613759, y: 0.00054495473, z: -0.015812969, w: 0.9998642}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: sindy1_Base_L_ForearmTwist01
+      parentName: sindy1_Base_L_Forearm
+      position: {x: -0.00000030517577, y: -0.000000076293944, z: -0.000000019073486}
+      rotation: {x: -0.00000067113416, y: 0.00146133, z: 0.00000015038627, w: 0.999999}
+      scale: {x: 0.9999998, y: 1, z: 0.99999994}
+    - name: sindy1_Base_L_ForearmTwist02
+      parentName: sindy1_Base_L_ForearmTwist01
+      position: {x: 0.0000016784668, y: 0.16978592, z: 0.000004968643}
+      rotation: {x: -0.0000043909567, y: -0.00383724, z: 0.000002229877, w: 0.99999267}
+      scale: {x: 1.0000001, y: 0.9999998, z: 0.9999999}
+    - name: sindy1_Base_L_Hand
+      parentName: sindy1_Base_L_Forearm
+      position: {x: 0.0000042247907, y: 0.33957186, z: 0.000008749918}
+      rotation: {x: -0.020286294, y: 0.00013034232, z: -0.0070063197, w: 0.99976975}
+      scale: {x: 1.0000004, y: 1.0000006, z: 1.0000001}
+    - name: sindy1_Base_L_Mid1
+      parentName: sindy1_Base_L_Hand
+      position: {x: -0.00026986227, y: 0.13530108, z: 0.020922357}
+      rotation: {x: 0.021480985, y: 0.0028341664, z: 0.016426776, w: 0.9996303}
+      scale: {x: 1.0000008, y: 1.0000006, z: 1}
+    - name: sindy1_Base_L_Mid2
+      parentName: sindy1_Base_L_Mid1
+      position: {x: -0.0000004742575, y: 0.056390136, z: -0.000000020864338}
+      rotation: {x: -0.0019836514, y: -0.0035001095, z: 0.00009483399, w: 0.99999195}
+      scale: {x: 1.0000002, y: 1.0000002, z: 0.99999964}
+    - name: sindy1_Base_L_Mid3
+      parentName: sindy1_Base_L_Mid2
+      position: {x: 0.00000031576658, y: 0.031057505, z: 0.00000002934125}
+      rotation: {x: 0.00080425333, y: -0.00009721818, z: 0.0006371528, w: 0.9999995}
+      scale: {x: 1.0000002, y: 1.0000005, z: 0.9999998}
+    - name: sindy1_Base_L_Index1
+      parentName: sindy1_Base_L_Hand
+      position: {x: -0.0070888363, y: 0.13149223, z: 0.04488553}
+      rotation: {x: 0.02242297, y: 0.0034714774, z: 0.016163683, w: 0.9996119}
+      scale: {x: 1.0000006, y: 1.0000005, z: 1}
+    - name: sindy1_Base_L_Index2
+      parentName: sindy1_Base_L_Index1
+      position: {x: -0.0000004875448, y: 0.047243375, z: 0.000000011550353}
+      rotation: {x: 0.0022037376, y: -0.005252552, z: 0.00046612896, w: 0.9999837}
+      scale: {x: 1.0000005, y: 1.0000001, z: 0.9999998}
+    - name: sindy1_Base_L_Index3
+      parentName: sindy1_Base_L_Index2
+      position: {x: 0.00000066041605, y: 0.03218106, z: -0.0000000016116949}
+      rotation: {x: 0.0011072053, y: 0.000030901738, z: 0.0015365056, w: 0.9999982}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.9999996}
+    - name: sindy1_Base_L_Ring1
+      parentName: sindy1_Base_L_Hand
+      position: {x: 0.00000015076651, y: 0.13448524, z: -0.000000021266064}
+      rotation: {x: 0.01254786, y: -0.0005810861, z: 0.01483879, w: 0.99981105}
+      scale: {x: 1.0000006, y: 1.0000006, z: 1.0000001}
+    - name: sindy1_Base_L_Ring2
+      parentName: sindy1_Base_L_Ring1
+      position: {x: -0.00000021615904, y: 0.047404546, z: -0.000000004191659}
+      rotation: {x: -0.004285877, y: 0.00013184913, z: 0.0006377745, w: 0.9999906}
+      scale: {x: 1.0000001, y: 1.0000002, z: 0.99999976}
+    - name: sindy1_Base_L_Ring3
+      parentName: sindy1_Base_L_Ring2
+      position: {x: 0.00000050194853, y: 0.028944343, z: -0.000000013216048}
+      rotation: {x: 0.001498536, y: 0.00017786532, z: 0.002812652, w: 0.99999493}
+      scale: {x: 1, y: 0.99999994, z: 0.9999999}
+    - name: sindy1_Base_L_Pinky1
+      parentName: sindy1_Base_L_Hand
+      position: {x: -0.0070888214, y: 0.1320563, z: -0.022138603}
+      rotation: {x: 0.01642984, y: -0.00037346492, z: 0.015473473, w: 0.99974525}
+      scale: {x: 1.0000004, y: 1.0000007, z: 1}
+    - name: sindy1_Base_L_Pinky2
+      parentName: sindy1_Base_L_Pinky1
+      position: {x: -0.0000003221949, y: 0.036886778, z: 0.000000022591102}
+      rotation: {x: -0.009062198, y: 0.0014191202, z: -0.000012497053, w: 0.999958}
+      scale: {x: 1, y: 0.9999997, z: 0.9999997}
+    - name: sindy1_Base_L_Pinky3
+      parentName: sindy1_Base_L_Pinky2
+      position: {x: -0.00000013011869, y: 0.022881746, z: -0.00000003900878}
+      rotation: {x: 0.0018779787, y: -0.000119190736, z: 0.026909685, w: 0.9996361}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
+    - name: sindy1_Base_L_Thumb1
+      parentName: sindy1_Base_L_Hand
+      position: {x: -0.031435937, y: 0.05583053, z: 0.03567554}
+      rotation: {x: 0.4054282, y: 0.12043374, z: 0.06454873, w: 0.9038568}
+      scale: {x: 1.0000011, y: 1.0000005, z: 1.0000004}
+    - name: sindy1_Base_L_Thumb2
+      parentName: sindy1_Base_L_Thumb1
+      position: {x: -0.0000003330522, y: 0.04252969, z: -0.000000087686026}
+      rotation: {x: -0.03340556, y: 0.001224644, z: -0.010033935, w: 0.99939084}
+      scale: {x: 1.0000007, y: 1.0000002, z: 1.0000005}
+    - name: sindy1_Base_L_Thumb3
+      parentName: sindy1_Base_L_Thumb2
+      position: {x: 0.00000033698305, y: 0.03210652, z: 0.0000001296116}
+      rotation: {x: -0.012065826, y: -0.00097490486, z: -0.013225162, w: 0.99983937}
+      scale: {x: 0.99999994, y: 1.0000001, z: 0.9999999}
+    - name: sindy1_Base_L_UpperarmTwist01
+      parentName: sindy1_Base_L_Upperarm
+      position: {x: -0.00000015258789, y: -0.000000019073486, z: -0.000000028610229}
+      rotation: {x: 0.00000083446486, y: 0.00019111096, z: 0.0000004615939, w: 1}
+      scale: {x: 1.0000004, y: 1.0000018, z: 1}
+    - name: sindy1_Base_L_UpperarmTwist02
+      parentName: sindy1_Base_L_UpperarmTwist01
+      position: {x: 0.00000061035155, y: 0.2097305, z: -0.0000015354157}
+      rotation: {x: -0.000001534734, y: -0.0001926658, z: -0.0000009116424, w: 1}
+      scale: {x: 1.0000001, y: 0.99999994, z: 0.9999997}
+    - name: sindy1_Base_L_RibsTwist
+      parentName: sindy1_Base_Spine02
+      position: {x: -0.107078634, y: -0.016184036, z: 0.07227877}
+      rotation: {x: -0.000008959014, y: 0.6366289, z: 0.7711704, w: -0.000001237514}
+      scale: {x: 1.0000011, y: 1, z: 1.0000002}
+    - name: sindy1_Base_L_Breast
+      parentName: sindy1_Base_L_RibsTwist
+      position: {x: 0.004, y: 0.043984078, z: -0.004562214}
+      rotation: {x: 6.938893e-18, y: 4.547473e-12, z: -3.6379784e-12, w: 1}
+      scale: {x: 0.9999998, y: 0.9999997, z: 0.99999994}
+    - name: sindy1_Base_NeckTwist01
+      parentName: sindy1_Base_Spine02
+      position: {x: 0.000000052770627, y: 0.3064169, z: -0.000028020417}
+      rotation: {x: 0.42420384, y: 0.000013951459, z: 0.0000080935015, w: 0.90556675}
+      scale: {x: 1, y: 1, z: 1}
+    - name: sindy1_Base_NeckTwist02
+      parentName: sindy1_Base_NeckTwist01
+      position: {x: -0.0000000031455418, y: 0.055683136, z: -0.0000008392334}
+      rotation: {x: 0.000009268521, y: 0.000014177231, z: 0.00000045915198, w: 1}
+      scale: {x: 1, y: 0.9999996, z: 0.9999996}
+    - name: sindy1_Base_Head
+      parentName: sindy1_Base_NeckTwist02
+      position: {x: 0.000000048029086, y: 0.055683453, z: -0.000001923047}
+      rotation: {x: -0.11761444, y: -0.000037024107, z: -0.0000004391683, w: 0.99305934}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: sindy1_Base_FacialBone
+      parentName: sindy1_Base_Head
+      position: {x: 0.0000006419682, y: 0.08313207, z: 0.011689468}
+      rotation: {x: 0.3893963, y: -0.5902095, z: -0.38942644, w: 0.59022903}
+      scale: {x: 0.9999998, y: 0.9999997, z: 1.0000007}
+    - name: sindy1_Base_R_Eye
+      parentName: sindy1_Base_FacialBone
+      position: {x: 0.0064166067, y: 0.05881765, z: -0.056999996}
+      rotation: {x: -0.7071069, y: -0.0000038743015, z: 0.7071067, w: -0.0000037917785}
+      scale: {x: 1.0000007, y: 1.0000008, z: 1.0000013}
+    - name: sindy1_Base_L_Eye
+      parentName: sindy1_Base_FacialBone
+      position: {x: 0.0064172153, y: 0.05881521, z: 0.056999996}
+      rotation: {x: -0.7071069, y: 0.00000068545336, z: 0.70710677, w: 0.00000079778135}
+      scale: {x: 1.0000006, y: 1.0000019, z: 1.000002}
+    - name: sindy1_hair1
+      parentName: sindy1_Base_Head
+      position: {x: 0.09226877, y: 0.1860095, z: 0.124417506}
+      rotation: {x: -0, y: 3.637978e-12, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: sindy1_hair2
+      parentName: sindy1_hair1
+      position: {x: 0.04541813, y: -0.07883405, z: 0.030662648}
+      rotation: {x: 0.16898823, y: 0.8938201, z: -0.16226076, w: -0.3823611}
+      scale: {x: 1.0000005, y: 1, z: 1.0000005}
+    - name: sindy1_hair3
+      parentName: sindy1_hair2
+      position: {x: -0.019087791, y: -0.07398446, z: -0.019713772}
+      rotation: {x: -0.28317326, y: -0.22502258, z: -0.55093026, w: -0.75209945}
+      scale: {x: 0.99999994, y: 0.9999998, z: 1.0000002}
+    - name: sindy1_hair4
+      parentName: sindy1_hair3
+      position: {x: -0.05751626, y: 0.0012197348, z: 0.010835538}
+      rotation: {x: 0.0000000745058, y: -0.0000001490116, z: -0.1779205, w: 0.9840449}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: sindy1_hair5
+      parentName: sindy1_hair4
+      position: {x: -0.037978612, y: 4.737933e-16, z: 0.024873173}
+      rotation: {x: 0.4594689, y: 0.5374776, z: -0.4594714, w: 0.5374869}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: sindy1_Base_R_Clavicle
+      parentName: sindy1_Base_Spine02
+      position: {x: 0.08512749, y: 0.21686493, z: -0.03347008}
+      rotation: {x: 0.05894285, y: 0.2206961, z: -0.67419666, w: 0.7023375}
+      scale: {x: 1.0000005, y: 1.0000002, z: 0.9999997}
+    - name: sindy1_Base_R_Upperarm
+      parentName: sindy1_Base_R_Clavicle
+      position: {x: 0.0000017107592, y: 0.14793648, z: 0.0000025678105}
+      rotation: {x: 0.11518718, y: 0.0010931939, z: 0.0038880538, w: 0.9933356}
+      scale: {x: 1.0000012, y: 1.0000019, z: 1.0000004}
+    - name: sindy1_Base_R_Forearm
+      parentName: sindy1_Base_R_Upperarm
+      position: {x: -0.0000035862274, y: 0.4194617, z: -0.0000017951301}
+      rotation: {x: 0.0012280118, y: -0.0017800232, z: -0.00035847077, w: 0.9999976}
+      scale: {x: 0.99999994, y: 1.0000001, z: 0.9999999}
+    - name: sindy1_Base_R_ElbowShareBone
+      parentName: sindy1_Base_R_Forearm
+      position: {x: -0.00000015258789, y: 0.000000076293944, z: -0.000000009536743}
+      rotation: {x: -0.0046142517, y: -0.0005458638, z: 0.015809594, w: 0.9998643}
+      scale: {x: 0.9999998, y: 1, z: 0.9999999}
+    - name: sindy1_Base_R_ForearmTwist01
+      parentName: sindy1_Base_R_Forearm
+      position: {x: -0.00000015258789, y: 0.000000076293944, z: -0.000000009536743}
+      rotation: {x: -0.00000038905995, y: -0.0014686182, z: -0.00000034064666, w: 0.9999989}
+      scale: {x: 0.9999998, y: 1, z: 0.9999998}
+    - name: sindy1_Base_R_ForearmTwist02
+      parentName: sindy1_Base_R_ForearmTwist01
+      position: {x: -0.0000016784668, y: 0.1697863, z: 0.0000025844574}
+      rotation: {x: -0.0000046838004, y: 0.0038381042, z: -0.0000024769788, w: 0.9999926}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.99999964}
+    - name: sindy1_Base_R_Hand
+      parentName: sindy1_Base_R_Forearm
+      position: {x: -0.0000024389888, y: 0.33957225, z: 0.000004234347}
+      rotation: {x: -0.020293191, y: -0.00012653471, z: 0.006999286, w: 0.9997696}
+      scale: {x: 1.0000005, y: 1.0000006, z: 0.9999999}
+    - name: sindy1_Base_R_Mid1
+      parentName: sindy1_Base_R_Hand
+      position: {x: 0.00026996332, y: 0.135301, z: 0.020922327}
+      rotation: {x: 0.02148067, y: -0.002834137, z: -0.01642546, w: 0.99963033}
+      scale: {x: 1.0000006, y: 1.0000007, z: 0.9999996}
+    - name: sindy1_Base_R_Mid2
+      parentName: sindy1_Base_R_Mid1
+      position: {x: -0.00000050271916, y: 0.056390356, z: 0.0000000038431804}
+      rotation: {x: -0.0019880417, y: 0.0034999347, z: -0.00009223442, w: 0.9999919}
+      scale: {x: 1, y: 1.0000001, z: 0.9999999}
+    - name: sindy1_Base_R_Mid3
+      parentName: sindy1_Base_R_Mid2
+      position: {x: -0.00000020550576, y: 0.031057583, z: -0.000000016974463}
+      rotation: {x: 0.0008032731, y: 0.0000972701, z: -0.00064128474, w: 0.99999946}
+      scale: {x: 1, y: 1.0000004, z: 0.99999946}
+    - name: sindy1_Base_R_Ring1
+      parentName: sindy1_Base_R_Hand
+      position: {x: 0.00000029978415, y: 0.13448524, z: -0.00000005267022}
+      rotation: {x: 0.012540167, y: 0.0005804473, z: -0.014794246, w: 0.9998118}
+      scale: {x: 1.0000004, y: 1.0000006, z: 0.99999976}
+    - name: sindy1_Base_R_Ring2
+      parentName: sindy1_Base_R_Ring1
+      position: {x: -0.00000025886226, y: 0.04740456, z: 0.000000036875075}
+      rotation: {x: -0.0042501152, y: -0.00013189756, z: -0.0006968707, w: 0.99999076}
+      scale: {x: 1.0000002, y: 1.0000004, z: 0.99999976}
+    - name: sindy1_Base_R_Ring3
+      parentName: sindy1_Base_R_Ring2
+      position: {x: -0.00000022885942, y: 0.028944463, z: -0.0000000148053925}
+      rotation: {x: 0.0014673407, y: -0.00017754371, z: -0.0027874077, w: 0.99999505}
+      scale: {x: 1.0000001, y: 1.0000005, z: 0.99999976}
+    - name: sindy1_Base_R_Thumb1
+      parentName: sindy1_Base_R_Hand
+      position: {x: 0.031435825, y: 0.05583054, z: 0.03567552}
+      rotation: {x: 0.4054327, y: -0.120423056, z: -0.06455635, w: 0.90385574}
+      scale: {x: 1.0000005, y: 1.0000004, z: 1.0000002}
+    - name: sindy1_Base_R_Thumb2
+      parentName: sindy1_Base_R_Thumb1
+      position: {x: 0.00000027293666, y: 0.042529672, z: -0.00000029001583}
+      rotation: {x: -0.033400975, y: -0.0012283918, z: 0.010041823, w: 0.99939084}
+      scale: {x: 1, y: 0.9999992, z: 1.0000004}
+    - name: sindy1_Base_R_Thumb3
+      parentName: sindy1_Base_R_Thumb2
+      position: {x: 0.00000006420019, y: 0.03210675, z: 0.00000026238695}
+      rotation: {x: -0.012068045, y: 0.0009746681, z: 0.013228734, w: 0.9998393}
+      scale: {x: 1, y: 1.0000005, z: 1}
+    - name: sindy1_Base_R_Index1
+      parentName: sindy1_Base_R_Hand
+      position: {x: 0.0070889317, y: 0.13149217, z: 0.044885516}
+      rotation: {x: 0.02242289, y: -0.003471576, z: -0.016163893, w: 0.9996119}
+      scale: {x: 1.0000004, y: 1.0000005, z: 0.9999997}
+    - name: sindy1_Base_R_Index2
+      parentName: sindy1_Base_R_Index1
+      position: {x: 0.0000002037386, y: 0.04724331, z: -0.0000000064496786}
+      rotation: {x: 0.0022049516, y: 0.005253078, z: -0.00044844692, w: 0.99998367}
+      scale: {x: 0.99999994, y: 1.0000001, z: 0.9999998}
+    - name: sindy1_Base_R_Index3
+      parentName: sindy1_Base_R_Index2
+      position: {x: 0.000000019854317, y: 0.032181136, z: 0.0000000073535924}
+      rotation: {x: 0.0011077131, y: -0.00003137579, z: -0.0015478524, w: 0.9999982}
+      scale: {x: 1.0000001, y: 1.0000002, z: 0.99999964}
+    - name: sindy1_Base_R_Pinky1
+      parentName: sindy1_Base_R_Hand
+      position: {x: 0.007088873, y: 0.13205622, z: -0.022138609}
+      rotation: {x: 0.016412158, y: 0.00037397235, z: -0.015486566, w: 0.99974537}
+      scale: {x: 1.0000005, y: 1.0000008, z: 0.99999994}
+    - name: sindy1_Base_R_Pinky2
+      parentName: sindy1_Base_R_Pinky1
+      position: {x: -0.0000003544503, y: 0.036886714, z: 0.00000002372099}
+      rotation: {x: -0.009040798, y: -0.0014195439, z: 0.000011732304, w: 0.9999582}
+      scale: {x: 0.9999998, y: 0.9999997, z: 0.9999998}
+    - name: sindy1_Base_R_Pinky3
+      parentName: sindy1_Base_R_Pinky2
+      position: {x: 0.00000018935889, y: 0.02288243, z: 0.0000000039880192}
+      rotation: {x: 0.0018747826, y: 0.00011977943, z: -0.026924958, w: 0.9996357}
+      scale: {x: 1, y: 1.0000005, z: 0.99999976}
+    - name: sindy1_Base_R_UpperarmTwist01
+      parentName: sindy1_Base_R_Upperarm
+      position: {x: 0.00000061035155, y: 0.000000114440915, z: -0.000000009536743}
+      rotation: {x: 0.00000046938652, y: -0.00021342278, z: 0.0000000020008881, w: 1}
+      scale: {x: 0.99999994, y: 1.0000005, z: 1}
+    - name: sindy1_Base_R_UpperarmTwist02
+      parentName: sindy1_Base_R_UpperarmTwist01
+      position: {x: 0.00000015258789, y: 0.20973016, z: -0.00000043869017}
+      rotation: {x: -0.0000014675785, y: 0.00021127725, z: 0.00000086812645, w: 1}
+      scale: {x: 1.0000007, y: 1.0000005, z: 1}
+    - name: sindy1_Base_R_RibsTwist
+      parentName: sindy1_Base_Spine02
+      position: {x: 0.10698748, y: -0.016110642, z: 0.07223627}
+      rotation: {x: 0.0000009994899, y: 0.6366289, z: 0.7711704, w: 0.000009362421}
+      scale: {x: 1.0000015, y: 1.0000001, z: 1.0000004}
+    - name: sindy1_Base_R_Breast
+      parentName: sindy1_Base_R_RibsTwist
+      position: {x: -0.004, y: 0.043984164, z: -0.0045620874}
+      rotation: {x: 1.5091381e-12, y: -4.547473e-13, z: 0.00000022420059, w: 1}
+      scale: {x: 0.9999998, y: 0.9999997, z: 0.99999994}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -97,7 +612,7 @@ ModelImporter:
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 3
+  animationType: 2
   humanoidOversampling: 1
   avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1

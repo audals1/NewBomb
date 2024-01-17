@@ -55,7 +55,7 @@ MonoBehaviour:
   - {fileID: 6094460177963827632}
   - {fileID: 1333302630794439724}
   - {fileID: 3876529833679596670}
-  m_UpdateRate: 60
+  m_UpdateRate: 120
   m_UpdateMode: 3
   m_Damping: 0.2
   m_DampingDistrib:
@@ -218,8 +218,8 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4400573800982528702}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: a1acb02554a610046b53a208e62ccce9, type: 3}
-  m_Controller: {fileID: 9100000, guid: 2be28be8227582b4fa2093ecaba6d29b, type: 2}
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

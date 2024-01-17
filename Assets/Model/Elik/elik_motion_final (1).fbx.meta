@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f862d74dd76778640b118e887603d555
+guid: a907c98ad832f0f439ef10b0af9977ee
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -19,10 +19,7 @@ ModelImporter:
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
-    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
-      might lower retargeting quality:\nNote: Activate translation DOF on avatar
-      to improve retargeting quality.\n\t'elik1_Base_Pelvis' is inbetween humanoid
-      transforms and has rotation animation that will be discarded.\n"
+    animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -115,13 +112,13 @@ ModelImporter:
     serializedVersion: 3
     human: []
     skeleton:
-    - name: elik_motion_final(Clone)
+    - name: elik_motion_final (1)(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: elik1_gr
-      parentName: elik_motion_final(Clone)
+      parentName: elik_motion_final (1)(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -201,7 +198,7 @@ ModelImporter:
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: elik1_BoneRoot
-      parentName: elik_motion_final(Clone)
+      parentName: elik_motion_final (1)(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
       scale: {x: 1, y: 0.9999997, z: 0.9999997}
