@@ -16,7 +16,7 @@ public class ClockMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //RotateClockHand();
+        RotateClockHand();
         if (minMove.transform.rotation == transform.rotation)
         {
             count++;
@@ -26,12 +26,9 @@ public class ClockMove : MonoBehaviour
 
     void InitRotation()
     {
-        Random.InitState(System.DateTime.Now.Millisecond + 1);
         float random = Random.Range(0f, 360f);
-        //Debug.Log($"random : {random}");
         Quaternion randomRotation = Quaternion.Euler(0f, random, 0f);
         transform.rotation = randomRotation;
-        //Debug.Log(transform.rotation.y);
     }
 
     void RotateClockHand()

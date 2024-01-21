@@ -18,12 +18,9 @@ public class MinMove : MonoBehaviour
 
     void InitRotation()
     {
-        Random.InitState(System.DateTime.Now.Millisecond);
         float random = Random.Range(0f, 360f);
-        //Debug.Log($"random : {random}");
         Quaternion randomRotation = Quaternion.Euler(0f, random, 0f);
         transform.rotation = randomRotation;
-        //Debug.Log(transform.rotation.y);
     }
 
     void RotateClockHand()
