@@ -677,6 +677,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.38
       objectReference: {fileID: 0}
+    - target: {fileID: 4342843550244669376, guid: 89f59014c8fb57e4f9a082c6e679c27b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 4342843550244669376, guid: 89f59014c8fb57e4f9a082c6e679c27b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.12
+      objectReference: {fileID: 0}
     - target: {fileID: 5466732130520410663, guid: 89f59014c8fb57e4f9a082c6e679c27b, type: 3}
       propertyPath: m_Name
       value: Clock
