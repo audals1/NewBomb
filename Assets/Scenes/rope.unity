@@ -1191,7 +1191,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 723993863}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.77720106, y: 0, z: 0, w: -0.62925243}
+  m_LocalRotation: {x: 0.13390008, y: 0, z: 0, w: 0.99099493}
   m_LocalPosition: {x: 0, y: 0, z: 1.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1202,7 +1202,7 @@ Transform:
   - {fileID: 1532179894}
   - {fileID: 763125780}
   m_Father: {fileID: 966128500}
-  m_LocalEulerAnglesHint: {x: -977.99, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -704.61, y: 0, z: 0}
 --- !u!95 &723993867
 Animator:
   serializedVersion: 5
@@ -1695,7 +1695,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &887506581
 Transform:
   m_ObjectHideFlags: 0
@@ -1805,7 +1805,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &952061829
 Transform:
   m_ObjectHideFlags: 0
@@ -2374,10 +2374,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 10
-  groundCheck: {fileID: 1059932777}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!65 &1059932779
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4016,7 +4012,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1765735471
 Transform:
   m_ObjectHideFlags: 0
