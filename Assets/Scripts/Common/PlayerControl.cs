@@ -4,32 +4,39 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
-    public float jumpForce = 10f;
+    public float jumpHeight = 2f;
+    public float timeToJumpApex = 0.5f;
 
-    private Rigidbody rb;
+    private float gravity;
+    private float jumpVelocity;
+    private Vector3 velocity;
+
     private bool isGrounded;
+    private float groundCheckDistance = 0.1f;
 
-    private void Start()
+    void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        gravity = -(2 * jumpHeight) / Mathf.Pow(timeToJumpApex, 2);
+        jumpVelocity = Mathf.Abs(gravity) * timeToJumpApex;
+        velocity = Vector3.zero;
     }
 
-    private void Update()
+    void Update()
     {
-        // 땅에 닿아 있는지 체크
-        isGrounded = Physics.CheckSphere(transform.position, 0.1f);
-        Debug.Log(isGrounded);
-        // 점프 입력 처리
-        if (isGrounded && Input.GetButtonDown("Jump"))
+        isGrounded = Physics.Raycast(transform.position, Vector3.down, groundCheckDistance);
+
+        if (isGrounded)
         {
-            Jump();
+            velocity.y = 0f;
+            if (Input.GetButtonDown("Jump"))
+            {
+                velocity.y = jumpVelocity;
+            }
         }
-    }
 
-    private void Jump()
-    {
-        // 점프 시에만 y 방향으로 힘을 가함
-        rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        velocity.y += gravity * Time.deltaTime;
+
+        transform.Translate(velocity * Time.deltaTime, Space.World);
     }
 }
 
