@@ -22,9 +22,6 @@ public class RopeMove : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        var count = 0;
-        count++;
-        Debug.Log($"충돌 횟수{count}");
         Debug.Log($"충돌 오브젝트{other.name}");
 
     }

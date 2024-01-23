@@ -7,36 +7,64 @@ public class PlayerControl : MonoBehaviour
     public float jumpHeight = 2f;
     public float timeToJumpApex = 0.5f;
 
-    private float gravity;
     private float jumpVelocity;
-    private Vector3 velocity;
+    [SerializeField] private float velocity;
 
-    private bool isGrounded;
-    private float groundCheckDistance = 0.1f;
+    private bool isGrounded = false;
 
-    void Start()
+    private Rigidbody GetRigidbody;
+
+
+    void Awake()
     {
-        gravity = -(2 * jumpHeight) / Mathf.Pow(timeToJumpApex, 2);
-        jumpVelocity = Mathf.Abs(gravity) * timeToJumpApex;
-        velocity = Vector3.zero;
+        GetRigidbody = GetComponent<Rigidbody>();    
     }
-
     void Update()
     {
-        isGrounded = Physics.Raycast(transform.position, Vector3.down, groundCheckDistance);
+        float gravity = -(2f * jumpHeight) / Mathf.Pow(timeToJumpApex / 2f, 2f);
 
-        if (isGrounded)
+        if (isGrounded && velocity <= 0)
         {
-            velocity.y = 0f;
             if (Input.GetButtonDown("Jump"))
             {
-                velocity.y = jumpVelocity;
+                jumpVelocity = -gravity * timeToJumpApex / 2f;
+                velocity = jumpVelocity;
             }
         }
 
-        velocity.y += gravity * Time.deltaTime;
+        else
+        {
+            velocity += gravity * Time.deltaTime;
+        }
 
-        transform.Translate(velocity * Time.deltaTime, Space.World);
+        var position = GetRigidbody.position;
+        position.y += velocity * Time.deltaTime;
+        GetRigidbody.MovePosition(position);
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        OnEnterGround();    
+    }
+    void OnCollisionExit(Collision collision)
+    {
+        OnExitGround();    
+    }
+
+    public void OnEnterGround()
+    {
+        Debug.Log("Enter Ground : " + velocity);
+        isGrounded = true;
+        if (velocity <= 0)
+        {
+            velocity = 0;
+        }
+    }
+
+    public void OnExitGround()
+    {
+        Debug.Log("Exit Ground");
+        isGrounded = false;
     }
 }
 

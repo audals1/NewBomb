@@ -10,13 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 430151036902627982}
   - component: {fileID: 1361168824550408621}
+  - component: {fileID: 661427854989705264}
   m_Layer: 0
   m_Name: Dynamicbone_Noel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &430151036902627982
 Transform:
   m_ObjectHideFlags: 0
@@ -105,6 +106,27 @@ MonoBehaviour:
   m_ReferenceObject: {fileID: 0}
   m_DistanceToObject: 20
   m_Multithread: 1
+--- !u!95 &661427854989705264
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880340151287535330}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: e6105234d8b756d48a0b338e6b62e350, type: 3}
+  m_Controller: {fileID: 9100000, guid: 2be28be8227582b4fa2093ecaba6d29b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &4425406435541439799
 PrefabInstance:
   m_ObjectHideFlags: 0
