@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fusion;
 
-public class PlayerControl : MonoBehaviour
+public class PlayerControl : NetworkBehaviour
 {
     public float jumpHeight = 2f;
     public float timeToJumpApex = 0.5f;
@@ -11,22 +12,50 @@ public class PlayerControl : MonoBehaviour
     [SerializeField] private float velocity;
 
     private bool isGrounded = false;
+    private bool jumpPressed = false;
 
-    private Rigidbody GetRigidbody;
+    private Rigidbody _rigidbody;
+    private Animator _animator;
 
 
-    void Awake()
+    private void Awake()
     {
-        GetRigidbody = GetComponent<Rigidbody>();    
+        _rigidbody = GetComponent<Rigidbody>();
+        _animator = GetComponent<Animator>();
     }
-    void Update()
+    public override void FixedUpdateNetwork()
+    {
+        if (!HasStateAuthority) return; 
+            Jump();
+    }
+
+    private void Update()
+    {
+        if (Input.GetButtonDown("Jump"))
+        {
+            jumpPressed = true;
+        }
+
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        OnEnterGround();    
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+        OnExitGround();    
+    }
+
+    private void Jump()
     {
         float gravity = -(2f * jumpHeight) / Mathf.Pow(timeToJumpApex / 2f, 2f);
 
         if (isGrounded && velocity <= 0)
         {
-            if (Input.GetButtonDown("Jump"))
+            if (jumpPressed)
             {
+                _animator.SetBool("isJump", true);
                 jumpVelocity = -gravity * timeToJumpApex / 2f;
                 velocity = jumpVelocity;
             }
@@ -34,36 +63,24 @@ public class PlayerControl : MonoBehaviour
 
         else
         {
-            velocity += gravity * Time.deltaTime;
+            velocity += gravity * Runner.DeltaTime;
         }
 
-        var position = GetRigidbody.position;
-        position.y += velocity * Time.deltaTime;
-        GetRigidbody.MovePosition(position);
-    }
-
-    void OnCollisionEnter(Collision collision)
-    {
-        OnEnterGround();    
-    }
-    void OnCollisionExit(Collision collision)
-    {
-        OnExitGround();    
+        var position = _rigidbody.position;
+        position.y += velocity * Runner.DeltaTime;
+        _rigidbody.MovePosition(position);
     }
 
     public void OnEnterGround()
     {
-        Debug.Log("Enter Ground : " + velocity);
         isGrounded = true;
-        if (velocity <= 0)
-        {
-            velocity = 0;
-        }
+        _animator.SetBool("isJump", false);
+        if (velocity <= 0) velocity = 0;
+        Debug.Log(isGrounded);
     }
 
     public void OnExitGround()
     {
-        Debug.Log("Exit Ground");
         isGrounded = false;
     }
 }
