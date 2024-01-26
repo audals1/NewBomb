@@ -1,0 +1,52 @@
+Photon Fusion Advanced KCC Addon - Release History
+
+Last tested with Fusion SDK 2.0.0 RC3 Build 807
+
+2.0.5
+- Fixed projection of depenetration vector, resulting in jitter on slopes.
+
+2.0.4
+- Added [HideInCallstack] attribute to custom log methods.
+- Removed [NetworkBehaviourWeaved(-1)] attribute from KCC class - this fixes TeleportRPC().
+
+2.0.3
+- Changed root namespace from Fusion.KCC to Fusion.Addons.KCC.
+- Added new argument to processor suppress methods - it is now allowed to suppress processors in all future stages.
+- Added support for SuppressProcessorsExcept<T>() and other similar variants - skips execution of all pending processors except processors of type T.
+- Added support for suppressing processors from all future stages via method argument (default is false).
+- It is now guaranteed a processor is executed only once during a stage even if it is registered in multiple collections (Local/Modifier/Collision/...).
+- EnvironmentProcessor.SuppressOtherProcessors() is now protected virtual which allows applying custom suppression rules after the base stage is done.
+- EnvironmentProcessor now sets KCCData.KinematicSpeed from ISetKinematicSpeed stage instead of IPrepareData.
+- Fixed interpolation in PlatformProcessor.
+- Minor performance optimizations.
+
+2.0.2
+- Fixed state reset on predicted proxies.
+- Disabled proxy prediction/interpolation in fixed update.
+- Added KCC.RestoreState() to support manual reset of state from network buffer.
+- Network traffic and performance optimizations.
+- Added support for Move and Rotate handles.
+- Added KCC.Interpolate() methods for interpolation with custom source/timeframe/alpha.
+- Interpolation now respects Object.RenderSource and Object.RenderTimeframe and uses correctly FUN/Render KCCData instances.
+- KCCSettings.Processors type changed to array of UnityEngine.Object. From now any IKCCProcessor object can be linked (prefab, child object, scriptable object).
+- Step-Up processor - min push-back distance required for activation can be configured on prefab.
+- Step-Up processor - added option to require target surface to be walkable (angle <= KCCData.MaxGroundAngle) before the processor activates.
+- Step-Up processor - added option to update collision hits with new overlap query when it is active.
+- Ground-Snap processor - added option to update collision hits with new overlap query when it is active.
+- Platform processor - major performance and usability improvements for platforms. The only requirement now is that the script implementing IPlatform must execute before PlatformProcessor.
+- Platform processor - separated world => platform and platform => space transition durations.
+- Platform processor - added support for platform rotation.
+- Platform processor - execution of all scripts that implement IPlatform must happen before PlatformProcessor. This is a hard requirement to get everything smooth.
+- Added ScriptableKCCProcessor - default KCC processor implementation based on ScriptableObject.
+- Added NetworkTRSPProcessor - default KCC processor implementation based on NetworkTRSP.
+- Added more data to StatsRecorder.
+- Added comments to step-up, ground-snap and platform processors for easier implementation of custom modifications.
+- Added default provider prefabs.
+
+Version 2.0.1
+- Added Force Single Overlap Query option to KCC settings. This is a performance optimization for non-player characters at the cost of lower movement quality.
+- Profiler calls replaced by profiler markers.
+- Performance optimizations.
+
+Version 2.0.0
+- Initial release.

@@ -12,10 +12,9 @@ GameObject:
   - component: {fileID: 1361168824550408621}
   - component: {fileID: 5430745835176332777}
   - component: {fileID: 5569135787585673764}
-  - component: {fileID: 1756839481055168394}
   - component: {fileID: 7354217720479523193}
   - component: {fileID: 2724613381183097071}
-  - component: {fileID: 2924440195794630527}
+  - component: {fileID: 8782937924568141674}
   m_Layer: 0
   m_Name: Dynamicbone_Noel
   m_TagString: Untagged
@@ -126,6 +125,7 @@ MonoBehaviour:
   jumpHeight: 4
   timeToJumpApex: 1.633
   velocity: 0
+  KCC: {fileID: 8782937924568141674}
 --- !u!54 &5569135787585673764
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -148,32 +148,11 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 122
   m_CollisionDetection: 2
---- !u!65 &1756839481055168394
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1880340151287535330}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.38, y: 2.508878, z: 0.60456514}
-  m_Center: {x: 0, y: 1.4170252, z: -0.004733458}
 --- !u!95 &7354217720479523193
 Animator:
   serializedVersion: 5
@@ -209,12 +188,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SortKey: 712276343
   ObjectInterest: 1
-  Flags: 524289
+  Flags: 786433
   NestedObjects: []
   NetworkedBehaviours:
   - {fileID: 5430745835176332777}
-  - {fileID: 2924440195794630527}
---- !u!114 &2924440195794630527
+  - {fileID: 8782937924568141674}
+--- !u!114 &8782937924568141674
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -223,13 +202,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 1880340151287535330}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Script: {fileID: 11500000, guid: 2f7684f04e649e84fb2ee1bc9fbee42d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SyncScale: 0
-  SyncParent: 0
-  _autoAOIOverride: 1
-  DisableSharedModeInterpolation: 0
+  _settings:
+    Shape: 1
+    IsTrigger: 0
+    Radius: 0.35
+    Height: 1.8
+    Extent: 0.035
+    ColliderLayer: 0
+    CollisionLayerMask:
+      serializedVersion: 2
+      m_Bits: 1
+    Features: -1
+    AllowClientTeleports: 0
+    InputAuthorityBehavior: 0
+    StateAuthorityBehavior: 0
+    ProxyBehavior: 0
+    Processors:
+    - {fileID: 4219866145273439913, guid: 1ab62523487a65745ab7ee9663ad9025, type: 3}
+    - {fileID: 561824206424634091, guid: 68c4081a63f1dfd469da9c95bea22158, type: 3}
+    - {fileID: 8306782452827789390, guid: 6d976f9777012db4aa55e7e6b1991afe, type: 3}
+    TeleportThreshold: 1
+    MaxPenetrationSteps: 8
+    CCDRadiusMultiplier: 0.75
+    AntiJitterDistance: {x: 0.025, y: 0.01}
+    PredictionCorrectionSpeed: 30
+    NetworkedInteractions: 8
+    ForceSingleOverlapQuery: 0
+    SuppressConvexMeshColliders: 0
 --- !u!1001 &4425406435541439799
 PrefabInstance:
   m_ObjectHideFlags: 0
