@@ -1,90 +1,99 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using Fusion;
 using Fusion.Addons.KCC;
 
 
 public class PlayerControl : NetworkBehaviour
 {
-    public float jumpHeight = 2f;
-    public float timeToJumpApex = 0.5f;
+	public KCC KCC;
+	private NetworkMecanimAnimator _animator;
 
-    private float jumpVelocity;
-    [SerializeField] private float velocity;
+	private MyInput _accumulatedInput;
 
-    private bool isGrounded = false;
-    private bool jumpPressed = false;
-
-
-    private Rigidbody _rigidbody;
-    private Animator _animator;
-
-    public KCC KCC;
-    
-
+	[Networked] public float JumpCount { get; set; }
 
     private void Awake()
     {
-        _rigidbody = GetComponent<Rigidbody>();
-        _animator = GetComponent<Animator>();
-    }
-    public override void FixedUpdateNetwork()
-    {
-        if (!HasStateAuthority) return;
-        if (GetInput(out BasicInput input) == false) return;
-        if (input.Jump && KCC.Data.IsGrounded) KCC.Jump(Vector3.up * 6f);
+		_animator = GetComponent<NetworkMecanimAnimator>();
     }
 
-    //private void Update()
-    //{
-    //    if (Input.GetButtonDown("Jump"))
-    //    {
-    //        jumpPressed = true;
-    //    }
-    //}
-
-    public override void Render()
+    private void Start()
     {
-        if (GetInput(out BasicInput input) == true) _animator.SetBool("isJump", true);
-        else _animator.SetBool("isJump", false);
+		KCC.OnCollisionEnter += OnCollisionEnterCallBack;
     }
 
 
-    private void Jump()
-    {
-        float gravity = -(2f * jumpHeight) / Mathf.Pow(timeToJumpApex / 2f, 2f);
+    public override void Spawned()
+	{
+		if (Object.HasInputAuthority == true)
+		{
+			Runner.GetComponent<NetworkEvents>().OnInput.AddListener(OnPlayerInput);
+		}
+	}
 
-        if (isGrounded && velocity <= 0)
+	public override void Despawned(NetworkRunner runner, bool hasState)
+	{
+		runner.GetComponent<NetworkEvents>().OnInput.RemoveListener(OnPlayerInput);
+	}
+
+	public override void FixedUpdateNetwork()
+	{
+		if (HasStateAuthority)
         {
-            if (jumpPressed)
-            {
-                jumpVelocity = -gravity * timeToJumpApex / 2f;
-                velocity = jumpVelocity;
-            }
-        }
+			if (GetInput(out MyInput input) == true)
+			{
+				if (input.Jump == true && KCC.Data.IsGrounded == true)
+				{
+					KCC.Jump(Vector3.up * 6.0f);
+					JumpCount++;
+					Debug.Log(JumpCount);
+					_animator.SetTrigger("IsJump", true);
+				}
+			}
+		}
+	}
 
-        else
-        {
-            velocity += gravity * Runner.DeltaTime;
-        }
+	public override void Render()
+	{
+		Keyboard keyboard = Keyboard.current;
+		if (keyboard != null)
+		{
+			if (keyboard.spaceKey.wasPressedThisFrame == true)
+			{
+				_accumulatedInput.Jump = true;
+			}
+		}
+	}
 
-        var position = _rigidbody.position;
-        position.y += velocity * Runner.DeltaTime;
-        _rigidbody.MovePosition(position);
-    }
+	private void OnPlayerInput(NetworkRunner runner, NetworkInput networkInput)
+	{
+		// Accumulated input is consumed.
+		networkInput.Set(_accumulatedInput);
 
-    public void OnEnterGround()
+		// Reset accumulated input to default.
+		_accumulatedInput = default;
+	}
+
+	public partial interface IKCCProcessor
+	{
+		float GetPriority(KCC kcc) => default;       // Processors with higher priority are executed first.
+
+		void OnEnter(KCC kcc, KCCData data) { } // Called when a KCC starts interacting with the processor.
+		void OnExit(KCC kcc, KCCData data) { } // Called when a KCC stops interacting with the processor.
+		void OnStay(KCC kcc, KCCData data) { } // Called when a KCC interacts with the processor and the movement is fully predicted or extrapolated.
+		void OnInterpolate(KCC kcc, KCCData data) { } // Called when a KCC interacts with the processor and the movement is interpolated.
+	}
+
+	private void OnCollisionEnterCallBack(KCC kcc, KCCCollision collision)
     {
-        isGrounded = true;
-        if (velocity <= 0) velocity = 0;
-        Debug.Log(isGrounded);
-    }
-
-    public void OnExitGround()
-    {
-        isGrounded = false;
-    }
+		if (collision.Collider.name == "Rope")
+		{
+			Debug.Log("로프 충돌");
+		}
+	}
 }
 
 

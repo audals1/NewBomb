@@ -909,7 +909,7 @@ GameObject:
   - component: {fileID: 589121535}
   - component: {fileID: 589121536}
   m_Layer: 0
-  m_Name: Rope
+  m_Name: RopeRoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2462,7 +2462,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -2833,9 +2833,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 434f6d7792424634f9f371e45503a2e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpHeight: 4
-  timeToJumpApex: 0.5
-  velocity: 0
+  KCC: {fileID: 0}
+  _JumpCount: 0
 --- !u!1 &1070711520
 GameObject:
   m_ObjectHideFlags: 0
@@ -4692,13 +4691,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1867364824}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.49, z: -12.1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 4.49, z: 21.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &1867364828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5535,7 +5534,7 @@ GameObject:
   - component: {fileID: 2136978285}
   - component: {fileID: 2136978284}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: Rope
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

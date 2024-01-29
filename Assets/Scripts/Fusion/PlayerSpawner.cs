@@ -38,10 +38,13 @@ public class PlayerSpawner : NetworkBehaviour
         Runner.SetPlayerObject(playerRef, player);
 
         Runner.SetPlayerAlwaysInterested(playerRef, player, true);
+
+        Debug.Log(playerRef.PlayerId);
     }
 
     private void DespawnPlayer(PlayerRef playerRef, PlayerControl player)
     {
+        Object.ReleaseStateAuthority();
         Runner.Despawn(player.Object);
     }
 }
