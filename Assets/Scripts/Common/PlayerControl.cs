@@ -6,7 +6,7 @@ using Fusion;
 using Fusion.Addons.KCC;
 
 
-public class PlayerControl : NetworkBehaviour
+public class PlayerControl : NetworkBehaviour, IKCCProcessor
 {
 	public KCC KCC;
 	private NetworkMecanimAnimator _animator;
@@ -49,7 +49,6 @@ public class PlayerControl : NetworkBehaviour
 				{
 					KCC.Jump(Vector3.up * 6.0f);
 					JumpCount++;
-					Debug.Log(JumpCount);
 					_animator.SetTrigger("IsJump", true);
 				}
 			}
@@ -77,7 +76,7 @@ public class PlayerControl : NetworkBehaviour
 		_accumulatedInput = default;
 	}
 
-	public partial interface IKCCProcessor
+	/*public partial interface IKCCProcessor
 	{
 		float GetPriority(KCC kcc) => default;       // Processors with higher priority are executed first.
 
@@ -85,14 +84,19 @@ public class PlayerControl : NetworkBehaviour
 		void OnExit(KCC kcc, KCCData data) { } // Called when a KCC stops interacting with the processor.
 		void OnStay(KCC kcc, KCCData data) { } // Called when a KCC interacts with the processor and the movement is fully predicted or extrapolated.
 		void OnInterpolate(KCC kcc, KCCData data) { } // Called when a KCC interacts with the processor and the movement is interpolated.
-	}
+	}*/
 
 	private void OnCollisionEnterCallBack(KCC kcc, KCCCollision collision)
     {
+		
 		if (collision.Collider.name == "Rope")
 		{
 			Debug.Log("로프 충돌");
 		}
+	}
+	public void OnEnter(KCC kcc, KCCData data) 
+	{
+		Debug.Log("충돌체크");
 	}
 }
 

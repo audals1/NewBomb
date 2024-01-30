@@ -359,7 +359,7 @@ Transform:
   m_GameObject: {fileID: 237361053}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.43, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -403,7 +403,7 @@ Transform:
   m_GameObject: {fileID: 343903579}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.16, y: 0, z: 0}
+  m_LocalPosition: {x: -2.68, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -943,8 +943,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da148e6fd22883a498f8017191eb5671, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sinMultiplier: 5
-  cosMultiplier: 5
+  _sinMultiplier: 5
+  _cosMultiplier: 5
 --- !u!114 &589121535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -959,8 +959,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SortKey: 406850512
   ObjectInterest: 1
-  Flags: 262145
-  NestedObjects: []
+  Flags: 524289
+  NestedObjects:
+  - {fileID: 2136978288}
   NetworkedBehaviours:
   - {fileID: 589121534}
   - {fileID: 589121536}
@@ -1506,6 +1507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerPrefab: {fileID: 1880340151287535330, guid: ad294cc65f9cc9c4886b4016906f57f5, type: 3}
+  _NetworkedPlayerIndex: -1
 --- !u!1 &723993863
 GameObject:
   m_ObjectHideFlags: 0
@@ -1564,8 +1566,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da148e6fd22883a498f8017191eb5671, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sinMultiplier: 10
-  cosMultiplier: 5
+  _sinMultiplier: 5
+  _cosMultiplier: 5
 --- !u!4 &723993866
 Transform:
   m_ObjectHideFlags: 0
@@ -2425,7 +2427,7 @@ GameObject:
   - component: {fileID: 1001815002}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2669,7 +2671,7 @@ Transform:
   m_GameObject: {fileID: 1027601392}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.08, y: 0, z: 0}
+  m_LocalPosition: {x: 2.01, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2931,8 +2933,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da148e6fd22883a498f8017191eb5671, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sinMultiplier: 10
-  cosMultiplier: 5
+  _sinMultiplier: 5
+  _cosMultiplier: 5
 --- !u!1 &1108363554
 GameObject:
   m_ObjectHideFlags: 0
@@ -5387,8 +5389,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da148e6fd22883a498f8017191eb5671, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sinMultiplier: 10
-  cosMultiplier: 5
+  _sinMultiplier: 5
+  _cosMultiplier: 5
 --- !u!54 &2099188629
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5533,6 +5535,8 @@ GameObject:
   - component: {fileID: 2136978286}
   - component: {fileID: 2136978285}
   - component: {fileID: 2136978284}
+  - component: {fileID: 2136978288}
+  - component: {fileID: 2136978287}
   m_Layer: 0
   m_Name: Rope
   m_TagString: Untagged
@@ -5628,6 +5632,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2136978282}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2136978287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136978282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4cb9a53b9c7d08498c0e24d8b0f202e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2136978288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136978282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1552182283, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SortKey: 4070195461
+  ObjectInterest: 1
+  Flags: 262145
+  NestedObjects: []
+  NetworkedBehaviours: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
